@@ -10,7 +10,7 @@ sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 yaourt -Syyuu
 
 # Install user applications
-yaourt -S calibre google-chrome-beta gparted filezilla
+yaourt -S calibre google-chrome-beta gparted filezilla slack-desktop
 
 # Development tools
 yaourt -S atom android-studio gitkraken
