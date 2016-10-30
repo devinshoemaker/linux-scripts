@@ -14,3 +14,6 @@ yaourt -S calibre google-chrome-beta gparted filezilla slack-desktop
 
 # Development tools
 yaourt -S atom android-studio gitkraken
+
+# Extra font support
+yaourt -S ttf-freefont ttf-arphic-uming ttf-baekmuk
