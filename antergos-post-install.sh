@@ -20,3 +20,9 @@ yaourt -S atom android-studio gitkraken
 
 # Remove packages
 yaourt -Rs chromium chromium-pepper-flash
+
+# Download source code
+mkdir -p ~/Code/Android/Examples
+cd ~/Code/Android/Examples
+git clone https://github.com/Dshoe/AndroidExamples-GeoQuiz.git GeoQuiz
+git clone https://github.com/Dshoe/AndroidExamples-CriminalIntent.git CriminalIntent
