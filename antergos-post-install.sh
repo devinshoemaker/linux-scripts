@@ -20,7 +20,7 @@ yaourt -S calibre filezilla google-chrome gparted guake imagewriter jdk8-openjdk
 yaourt -S atom android-studio gitkraken
 
 # Remove packages
-yaourt -Rs chromium chromium-pepper-flash
+#yaourt -Rs chromium chromium-pepper-flash
 
 # Download source code
 mkdir -p ~/Code/Android/Examples
