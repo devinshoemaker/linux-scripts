@@ -15,9 +15,6 @@ packer -S calibre filezilla google-chrome google-chrome-beta gparted guake image
 # Development tools
 packer -S atom android-studio gitkraken
 
-# Remove packages
-#yaourt -Rs chromium chromium-pepper-flash
-
 # Download source code
 mkdir -p ~/Code/Android/Examples
 cd ~/Code/Android/Examples
