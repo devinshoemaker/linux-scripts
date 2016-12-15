@@ -13,13 +13,13 @@ yaourt -Syyuu
 yaourt -S packer
 
 # Install fonts
-yaourt -S noto-fonts-emoji
+packer -S noto-fonts-emoji
 
 # Install user applications
-yaourt -S calibre filezilla google-chrome google-chrome-beta gparted guake imagewriter jdk8-openjdk lm_sensors p7zip slack-desktop
+packer -S calibre filezilla google-chrome google-chrome-beta gparted guake imagewriter jdk8-openjdk lm_sensors p7zip slack-desktop
 
 # Development tools
-yaourt -S atom android-studio gitkraken
+packer -S atom android-studio gitkraken
 
 # Remove packages
 #yaourt -Rs chromium chromium-pepper-flash
