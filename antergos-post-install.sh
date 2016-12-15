@@ -9,6 +9,9 @@
 # Update packages
 yaourt -Syyuu
 
+# Install packer
+yaourt -S packer
+
 # Install fonts
 yaourt -S noto-fonts-emoji
 
