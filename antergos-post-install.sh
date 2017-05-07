@@ -16,7 +16,7 @@ packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta g
 packer -S atom android-studio gitkraken maven
 
 # Download source code
-mkdir -p ~/Code/Android/Examples
-cd ~/Code/Android/Examples
+mkdir -p ~/Code/android/examples
+cd ~/Code/android/examples
 git clone https://github.com/Dshoe/AndroidExamples-GeoQuiz.git GeoQuiz
 git clone https://github.com/Dshoe/AndroidExamples-CriminalIntent.git CriminalIntent
