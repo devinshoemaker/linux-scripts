@@ -13,7 +13,7 @@ packer -S noto-fonts-emoji
 packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter jdk8-openjdk lm_sensors p7zip simple-scan slack-desktop
 
 # Development tools
-packer -S atom android-studio gitkraken maven postgresql
+packer -S atom android-studio gitkraken maven postgresql sublime-text
 
 # Download source code
 # Android
