@@ -10,10 +10,10 @@ yaourt -S packer
 packer -S noto-fonts-emoji
 
 # Install user applications
-packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter jdk8-openjdk lm_sensors p7zip simple-scan slack-desktop
+packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip simple-scan slack-desktop
 
 # Development tools
-packer -S atom android-studio gitkraken maven postgresql sublime-text
+packer -S atom android-studio gitkraken jdk8-openjdk maven postgresql sublime-text
 
 # Download source code
 # Android
