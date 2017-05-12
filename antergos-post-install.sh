@@ -26,3 +26,4 @@ git clone https://github.com/Dshoe/AndroidExamples-CriminalIntent.git CriminalIn
 mkdir -p ~/Code/spring
 cd ~/Code/spring
 git clone https://github.com/Dshoe/spring-liquibase-example.git
+git clone https://github.com/Dshoe/spring-web-db-example.git
