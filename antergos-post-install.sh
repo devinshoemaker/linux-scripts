@@ -4,7 +4,7 @@
 yaourt -Syyuu
 
 # Install packer
-yaourt -S packer
+yaourt -S pacaur packer
 
 # Install fonts
 packer -S noto-fonts-emoji
