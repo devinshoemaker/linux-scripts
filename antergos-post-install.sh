@@ -15,6 +15,9 @@ packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta g
 # Development tools
 packer -S atom android-studio gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql sublime-text
 
+# Ionic
+sudo npm install -g ionic cordova
+
 # Download source code
 # Android
 mkdir -p ~/Code/android/examples
