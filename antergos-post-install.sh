@@ -12,6 +12,14 @@ packer -S noto-fonts-emoji
 # Install user applications
 packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip simple-scan slack-desktop virtualbox
 
+# Install GDM
+packer -S gdm &&
+sudo systemctl stop lightdm.service &&
+sudo systemctl disable lightdm.service &&
+sudo systemctl enable gdm.service &&
+sudo systemctl start gdm.service &&
+packer -Rs lightdm
+
 # Development tools
 packer -S atom android-studio gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text
 
