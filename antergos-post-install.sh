@@ -3,25 +3,25 @@
 # Update packages
 yaourt -Syyuu
 
-# Install packer
-yaourt -S pacaur packer
+# Install pacaur
+yaourt -S pacaur
 
 # Install fonts
-packer -S noto-fonts-emoji
+pacaur -S noto-fonts-emoji
 
 # Install user applications
-packer -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip simple-scan slack-desktop virtualbox
+pacaur -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip simple-scan slack-desktop virtualbox
 
 # Install GDM
-packer -S gdm &&
+pacaur -S gdm &&
 sudo systemctl stop lightdm.service &&
 sudo systemctl disable lightdm.service &&
 sudo systemctl enable gdm.service &&
 sudo systemctl start gdm.service &&
-packer -Rs lightdm
+pacaur -Rs lightdm
 
 # Development tools
-packer -S atom android-studio gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text
+pacaur -S atom android-studio gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text
 
 # Ionic
 sudo npm install -g ionic cordova
