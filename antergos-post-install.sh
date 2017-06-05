@@ -21,7 +21,9 @@ sudo systemctl start gdm.service &&
 pacaur -Rs lightdm
 
 # Development tools
-pacaur -S atom android-studio gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text
+pacaur -S atom android-studio couchdb gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text &&
+sudo systemctl enable couchdb.service &&
+sudo systemctl start couchdb.service
 
 # Ionic
 sudo npm install -g ionic cordova
