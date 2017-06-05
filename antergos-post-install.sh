@@ -30,15 +30,15 @@ sudo npm install -g ionic cordova
 
 # Download source code
 # Android
-mkdir -p ~/Code/android/examples
-cd ~/Code/android/examples
-git clone https://github.com/Dshoe/AndroidExamples-GeoQuiz.git GeoQuiz
+mkdir -p ~/Code/android/examples &&
+cd ~/Code/android/examples &&
+git clone https://github.com/Dshoe/AndroidExamples-GeoQuiz.git GeoQuiz &&
 git clone https://github.com/Dshoe/AndroidExamples-CriminalIntent.git CriminalIntent
 
 # Spring
-mkdir -p ~/Code/spring
-cd ~/Code/spring
-git clone https://github.com/Dshoe/spring-liquibase-example.git
+mkdir -p ~/Code/spring &&
+cd ~/Code/spring &&
+git clone https://github.com/Dshoe/spring-liquibase-example.git &&
 git clone https://github.com/Dshoe/spring-web-db-example.git
 
 # Ionic 
