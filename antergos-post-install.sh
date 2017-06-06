@@ -44,4 +44,3 @@ git clone https://github.com/Dshoe/spring-web-db-example.git
 # Ionic 
 mkdir -p ~/Code/ionic &&
 cd ~/Code/ionic &&
-git clone https://github.com/Dshoe/ionic2-todo.git
