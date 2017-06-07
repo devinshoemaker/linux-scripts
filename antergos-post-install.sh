@@ -12,14 +12,6 @@ pacaur -S noto-fonts-emoji
 # Install user applications
 pacaur -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip simple-scan slack-desktop virtualbox
 
-# Install GDM
-pacaur -S gdm &&
-sudo systemctl stop lightdm.service &&
-sudo systemctl disable lightdm.service &&
-sudo systemctl enable gdm.service &&
-sudo systemctl start gdm.service &&
-pacaur -Rs lightdm
-
 # Development tools
 pacaur -S atom android-studio couchdb gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text &&
 sudo systemctl enable couchdb.service &&
