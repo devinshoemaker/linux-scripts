@@ -10,7 +10,7 @@ yaourt -S pacaur
 pacaur -S noto-fonts-emoji
 
 # Install user applications
-pacaur -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip simple-scan slack-desktop virtualbox
+pacaur -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip pulseaudio-equalizer simple-scan slack-desktop virtualbox
 
 # Development tools
 pacaur -S atom android-studio couchdb gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text
@@ -36,3 +36,9 @@ git clone https://github.com/Dshoe/spring-web-db-example.git
 # Ionic 
 mkdir -p ~/Code/ionic &&
 cd ~/Code/ionic
+
+# How to set up PulseAudio Equalizer
+sudo nano /etc/pulse/default.pa
+# Add '### Load the integrated PulseAudio equalizer and D-Bus module'
+# Add 'load-module module-equalizer-sink'
+# Add 'load-module module-dbus-protocol'
