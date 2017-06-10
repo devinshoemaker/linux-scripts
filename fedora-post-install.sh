@@ -22,4 +22,7 @@ EOF &&
 sudo dnf copr enable mosquito/atom &&
 
 # Install user applications
-sudo dnf install atom google-chrome-stable gparted guake simple-scan
+sudo dnf install google-chrome-stable gparted guake simple-scan
+
+# Install development tools
+sudo dnf install atom couchdb
