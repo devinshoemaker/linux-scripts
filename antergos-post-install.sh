@@ -14,8 +14,8 @@ pacaur -S calibre chromium-widevine filezilla google-chrome google-chrome-beta g
 
 # Development tools
 pacaur -S atom android-studio couchdb docker gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text &&
-# sudo systemctl enable couchdb.service &&
-# sudo systemctl start couchdb.service
+sudo systemctl enable couchdb.service &&
+sudo systemctl start couchdb.service &&
 sudo systemctl enable docker.service &&
 sudo systemctl start docker.service
 
