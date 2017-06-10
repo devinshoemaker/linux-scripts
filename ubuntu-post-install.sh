@@ -15,3 +15,6 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 # Install User Applications
 sudo apt-get update &&
 sudo apt-get install google-chrome-stable gparted guake
+
+# Remove Packages No Longer Required
+sudo apt autoremove
