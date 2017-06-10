@@ -4,7 +4,7 @@
 
 # Update Packages
 sudo dnf check-update &&
-sudo dnf upgrade &&
+sudo dnf upgrade
 
 ## Repos
 
