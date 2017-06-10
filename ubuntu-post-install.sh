@@ -7,4 +7,4 @@ sudo apt-get update &&
 sudo apt-get upgrade
 
 # Install User Applications
-sudo apt-get install gparted
+sudo apt-get install gparted guake
