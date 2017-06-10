@@ -1,2 +1,2 @@
-# antergos-post-install
-A post-install setup script designed for Antergos.
+# linux-post-install
+Post install scripts for several Linux distrobutions.
