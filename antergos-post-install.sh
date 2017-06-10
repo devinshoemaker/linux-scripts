@@ -35,9 +35,10 @@ cd ~/Code/spring &&
 git clone https://github.com/Dshoe/spring-liquibase-example.git &&
 git clone https://github.com/Dshoe/spring-web-db-example.git
 
-# Ionic 
+# Ionic
 mkdir -p ~/Code/ionic &&
-cd ~/Code/ionic
+cd ~/Code/ionic &&
+git clone https://github.com/Dshoe/CloudDo.git
 
 # How to set up PulseAudio Equalizer
 sudo nano /etc/pulse/default.pa
