@@ -4,7 +4,7 @@
 
 # Update Packages
 sudo dnf check-update &&
-sudo dnf upgrade
+sudo dnf upgrade &&
 
 ## Repos
 
@@ -22,7 +22,7 @@ EOF &&
 sudo dnf copr enable mosquito/atom &&
 
 # Install user applications
-sudo dnf install google-chrome-stable gparted guake simple-scan
+sudo dnf install google-chrome-stable gparted guake simple-scan &&
 
 # Install development tools
 sudo dnf install atom couchdb
