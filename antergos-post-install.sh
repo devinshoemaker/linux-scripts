@@ -12,6 +12,9 @@ pacaur -S noto-fonts-emoji
 # Install user applications
 pacaur -S calibre chromium-widevine filezilla google-chrome google-chrome-beta gparted guake imagewriter lm_sensors p7zip pulseaudio-equalizer simple-scan slack-desktop virtualbox
 
+# GNOME extensions
+pacaur -S gnome-shell-extension-topicons gnome-shell-extension-no-topleft-hot-corner
+
 # Development tools
 pacaur -S atom android-studio couchdb docker gitkraken intellij-idea-ultimate-edition jdk8-openjdk maven postgresql smartgit sublime-text &&
 apm install atom-typescript &&
