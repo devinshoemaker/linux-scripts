@@ -42,7 +42,8 @@ git clone https://github.com/Dshoe/spring-web-db-example.git
 # Ionic
 mkdir -p ~/Code/ionic &&
 cd ~/Code/ionic &&
-git clone https://github.com/Dshoe/CloudDo.git
+git clone https://github.com/Dshoe/CloudDo.git &&
+git clone https://github.com/Dshoe/taskit-ionic
 
 # How to set up PulseAudio Equalizer
 sudo nano /etc/pulse/default.pa
