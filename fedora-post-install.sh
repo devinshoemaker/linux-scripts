@@ -27,8 +27,11 @@ sudo dnf upgrade
 # Atom
 sudo dnf copr enable mosquito/atom
 
+# Visual Studio Code
+sudo dnf copr enable mosquito/vscode
+
 # Install user applications
 sudo dnf install google-chrome-stable gparted guake simple-scan
 
 # Install development tools
-sudo dnf install atom couchdb
+sudo dnf install atom couchdb vscode
