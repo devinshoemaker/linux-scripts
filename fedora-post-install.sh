@@ -31,7 +31,7 @@ sudo dnf copr enable mosquito/atom
 sudo dnf copr enable mosquito/vscode
 
 # Install user applications
-sudo dnf install google-chrome-stable gparted guake simple-scan
+sudo dnf install gnome-tweak-tool google-chrome-stable gparted guake simple-scan
 
 # Install development tools
 sudo dnf install atom couchdb vscode
