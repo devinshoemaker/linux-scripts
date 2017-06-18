@@ -83,3 +83,5 @@ sudo npm install -g ionic cordova
 mkdir -p ~/Code/ionic
 cd ~/Code/ionic 
 git clone https://github.com/dshoe/taskit-ionic.git 
+sudo npm install -g add-cors-to-couchdb
+add-cors-to-couchdb
