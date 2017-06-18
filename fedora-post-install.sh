@@ -33,5 +33,8 @@ sudo dnf copr enable mosquito/vscode
 # Install user applications
 sudo dnf install gnome-tweak-tool google-chrome-stable gparted guake simple-scan
 
+# Install GNOME extensions
+sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-simple-dock gnome-shell-extension-topicons-plus
+
 # Install development tools
 sudo dnf install atom couchdb vscode
