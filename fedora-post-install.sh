@@ -72,3 +72,11 @@ EOF
 ## Clean up
 cd ../
 rm -rf idea*
+
+# Download source code
+
+## Ionic
+sudo npm install -g ionic cordova
+mkdir -p ~/Code/ionic
+cd ~/Code/ionic 
+git clone https://github.com/dshoe/taskit-ionic.git 
