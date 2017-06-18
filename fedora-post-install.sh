@@ -30,8 +30,11 @@ sudo dnf copr enable mosquito/atom
 # Visual Studio Code
 sudo dnf copr enable mosquito/vscode
 
+# Arc theme
+sudo dnf copr enable user501254/Arc
+
 # Install user applications
-sudo dnf install gnome-tweak-tool google-chrome-stable gparted guake nano simple-scan
+sudo dnf install arc-theme-solid arc-icon-theme gnome-tweak-tool google-chrome-stable gparted guake nano simple-scan
 
 # Install GNOME extensions
 sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-simple-dock gnome-shell-extension-topicons-plus
