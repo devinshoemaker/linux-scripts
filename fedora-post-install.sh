@@ -41,6 +41,8 @@ sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extensi
 
 # Install development tools
 sudo dnf install atom couchdb vscode
+sudo systemctl start couchdb.service
+sudo systemctl enable couchdb.service
 
 # .bashrc
 echo export EDITOR=nano >> ~/.bashrc
