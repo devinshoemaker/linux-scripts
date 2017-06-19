@@ -48,11 +48,14 @@ sudo dnf install atom couchdb vscode
 sudo systemctl start couchdb.service
 sudo systemctl enable couchdb.service
 
-# .bashrc
-echo export EDITOR=nano >> ~/.bashrc
-
 # Install IntelliJ Ultimate
 ./fedora-install-intellij.sh
+
+# Install GitKraken
+./fedora-install-gitkraken.sh
+
+# .bashrc
+echo export EDITOR=nano >> ~/.bashrc
 
 # Download source code
 
