@@ -33,12 +33,15 @@ sudo dnf copr enable mosquito/vscode
 # Arc theme
 sudo dnf copr enable user501254/Arc
 
+# Spotify
+sudo dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
+
 # Flash plugin
 sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 
 # Install user applications
-sudo dnf install arc-theme-solid arc-icon-theme flash-plugin alsa-plugins-pulseaudio libcurl gnome-tweak-tool google-chrome-stable gparted guake nano simple-scan
+sudo dnf install arc-theme-solid arc-icon-theme flash-plugin alsa-plugins-pulseaudio libcurl gnome-tweak-tool google-chrome-stable gparted guake nano simple-scan spotify
 
 # Install GNOME extensions
 sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-simple-dock gnome-shell-extension-topicons-plus
