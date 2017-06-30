@@ -2,14 +2,14 @@
 
 # Fedora 25 Post Install Script
 
-## Repos
-## Run manually first! Then remove before running script.
+## Give User the Wheel
+### Run First Manually
+### su && usermod -a -G wheel dshoemaker
 
-su
+## Repos
 
 # Google Chrome
-
-cat << EOF > /etc/yum.repos.d/google-chrome.repo
+sudo cat << EOF > /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome - \$basearch
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/\$basearch
@@ -17,8 +17,6 @@ enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
-
-exit
 
 # Configure RPMFusion repository
 su -c 'dnf install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
