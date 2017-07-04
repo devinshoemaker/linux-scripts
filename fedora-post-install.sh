@@ -42,6 +42,9 @@ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 sudo dnf check-update
 sudo dnf upgrade
 
+# NVIDIA Driver
+sudo dnf install xorg-x11-drv-nvidia akmod-nvidia "kernel-devel-uname-r == $(uname -r)"
+
 # Install media codecs
 sudo dnf install gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg gstreamer1-libav gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools gstreamer1-plugins-good-extras gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-good gstreamer1-plugins-base gstreamer1
 
