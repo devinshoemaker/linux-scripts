@@ -67,6 +67,7 @@ sudo systemctl enable couchdb.service
 
 # .bashrc
 echo export EDITOR=nano >> ~/.bashrc
+echo export JAVA_HOME="/etc/alternatives/java_sdk"
 
 # Download source code
 
