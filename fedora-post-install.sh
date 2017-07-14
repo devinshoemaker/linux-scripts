@@ -50,6 +50,7 @@ sudo dnf install gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstream
 
 # Install user applications
 sudo dnf install arc-theme-solid arc-icon-theme flash-plugin alsa-plugins-pulseaudio libcurl fuse-exfat gnome-tweak-tool google-chrome-stable gparted guake nano pulseaudio-equalizer simple-scan spotify transmission
+sudo dnf install arc-theme-solid arc-icon-theme flash-plugin alsa-plugins-pulseaudio libcurl fuse-exfat gnome-tweak-tool google-chrome-stable gparted guake nano pulseaudio-equalizer simple-scan spotify transmission xclip
 
 # Install GNOME extensions
 sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-simple-dock gnome-shell-extension-topicons-plus
