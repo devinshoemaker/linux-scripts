@@ -11,20 +11,6 @@ cd idea*
 sudo mkdir -p /opt/jetbrains/idea
 sudo cp -r * /opt/jetbrains/idea/
 
-## Add to PATH
-export PATH=$PATH:/opt/jetbrains/idea/bin >> ~/.bashrc
-
-## Create desktop launcher
-cat << EOF > ~/.local/share/applications/intellij-idea-ultimate.desktop
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Terminal=false
-Type=Application
-Name=IntelliJ IDEA Ultimate
-Exec=/opt/jetbrains/idea/bin/idea.sh
-Icon=/opt/jetbrains/idea/bin/idea.png
-EOF
-
 ## Clean up
 cd ../
 rm -rf idea*
