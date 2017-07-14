@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Fedora 25 Post Install Script
+# Fedora 26 Post Install Script
 
 # Give User the Wheel
 # Run First Manually
