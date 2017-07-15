@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install GitKraken on Fedora 25
 
 ## Download from website 

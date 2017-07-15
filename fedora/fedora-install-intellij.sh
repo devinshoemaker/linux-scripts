@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install IntelliJ Ultimate on Fedora 25
 
 ## Download from website 
