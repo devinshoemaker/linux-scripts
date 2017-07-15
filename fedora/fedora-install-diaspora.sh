@@ -7,3 +7,7 @@ sudo dnf install tar make automake gcc gcc-c++ git net-tools libcurl-devel libxm
 
 # Initialize PostgreSQL database
 sudo postgresql-setup initdb
+
+# Enable and start PostgreSQL service
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
