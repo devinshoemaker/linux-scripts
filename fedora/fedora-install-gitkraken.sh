@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Install GitKraken on Fedora 25
+# Install GitKraken on Fedora 26
 
 ## Download from website 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz

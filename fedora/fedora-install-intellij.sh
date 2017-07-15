@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Install IntelliJ Ultimate on Fedora 25
+# Install IntelliJ Ultimate on Fedora 26
 
 ## Download from website 
 wget https://download.jetbrains.com/idea/ideaIU-2017.1.4.tar.gz
