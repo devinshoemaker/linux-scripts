@@ -15,3 +15,7 @@ sudo systemctl start postgresql
 # Enable and start Redis service
 sudo systemctl enable redis
 sudo systemctl start redis
+
+# Create Diaspora user
+sudo adduser diaspora 
+sudo passwd diaspora 
