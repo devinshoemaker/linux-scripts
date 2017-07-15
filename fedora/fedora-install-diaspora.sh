@@ -19,3 +19,6 @@ sudo systemctl start redis
 # Create Diaspora user
 sudo adduser diaspora 
 sudo passwd diaspora 
+
+# Disable login for Diaspora user
+sudo usermod -L diaspora 
