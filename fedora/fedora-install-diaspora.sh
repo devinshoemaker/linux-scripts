@@ -22,3 +22,7 @@ sudo passwd diaspora
 
 # Disable login for Diaspora user
 sudo usermod -L diaspora 
+
+# Login as Diaspora user
+su diaspora 
+cd ~
