@@ -11,3 +11,7 @@ sudo postgresql-setup initdb
 # Enable and start PostgreSQL service
 sudo systemctl enable postgresql
 sudo systemctl start postgresql
+
+# Enable and start Redis service
+sudo systemctl enable redis
+sudo systemctl start redis
