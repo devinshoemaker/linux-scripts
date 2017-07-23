@@ -78,3 +78,5 @@ add-cors-to-couchdb
 sudo dnf check-update
 sudo dnf upgrade
 
+# Install Fedy
+sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
