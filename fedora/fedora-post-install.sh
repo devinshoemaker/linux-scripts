@@ -51,8 +51,8 @@ sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extensi
 
 # Install development tools
 sudo dnf install atom couchdb vscode
-sudo systemctl start couchdb.service
-sudo systemctl enable couchdb.service
+sudo systemctl start couchdb
+sudo systemctl enable couchdb
 
 # Install IntelliJ Ultimate
 ./fedora-install-intellij.sh
