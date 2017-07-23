@@ -4,6 +4,9 @@
 
 # Repos
 
+# Install Fedy
+sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
+
 ## Google Chrome
 su -c 'cat << EOF > /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
@@ -77,6 +80,3 @@ add-cors-to-couchdb
 # Update Packages
 sudo dnf check-update
 sudo dnf upgrade
-
-# Install Fedy
-sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
