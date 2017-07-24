@@ -2,6 +2,9 @@
 
 # Install GitKraken on Fedora 26
 
+# Install Dependencies
+sudo dnf install libXScrnSaver
+
 ## Download from website 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz
 
