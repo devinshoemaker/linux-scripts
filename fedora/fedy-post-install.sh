@@ -11,5 +11,8 @@ sudo dnf install gnome-tweak-tool gparted guake nano pulseaudio-equalizer simple
 # Install GNOME extensions
 sudo dnf install gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-simple-dock gnome-shell-extension-topicons-plus
 
+# .bashrc
+echo export EDITOR=nano >> ~/.bashrc
+
 # Install Fedy
 sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
