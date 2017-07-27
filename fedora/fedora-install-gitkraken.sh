@@ -9,10 +9,7 @@ sudo dnf install libXScrnSaver
 wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz
 
 ## Extract tar.gz
-tar -xvzf gitkraken-amd64.tar.gz
-
-## Install to opt
-sudo rsync -va --delete-after gitkraken/ /opt/GitKraken/
+tar -xvzf gitkraken-amd64.tar.gz -C "/opt/"
 
 ## Add to PATH
 export PATH=$PATH:/opt/GitKraken >> ~/.bashrc
