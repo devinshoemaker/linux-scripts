@@ -30,4 +30,4 @@ Icon=gitkraken
 EOF
 
 # Clean up
-rm -rf gitkraken*
+rm gitkraken-amd64.tar.gz
