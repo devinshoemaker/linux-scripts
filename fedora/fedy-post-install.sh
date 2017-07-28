@@ -23,6 +23,9 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 # Install GitKraken
 ./fedora-install-gitkraken.sh
 
+# Install Atom
+./fedora-install-atom.sh
+
 # NVIDIA Driver
 sudo dnf install xorg-x11-drv-nvidia akmod-nvidia "kernel-devel-uname-r == $(uname -r)"
 
