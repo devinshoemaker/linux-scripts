@@ -25,4 +25,3 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 
 # Update Packages
 sudo dnf upgrade --refresh
-
