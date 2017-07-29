@@ -29,5 +29,8 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 # NVIDIA Driver
 sudo dnf -y install xorg-x11-drv-nvidia akmod-nvidia "kernel-devel-uname-r == $(uname -r)"
 
+# exFAT Support
+sudo dnf -y install fuse-exfat
+
 # Update Packages
 sudo dnf -y upgrade --refresh
