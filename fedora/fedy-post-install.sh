@@ -23,6 +23,9 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 # Install GitKraken
 ./fedora-install-gitkraken.sh
 
+# Install IntelliJ Idea Ultimate
+./fedora-install-intelliju.sh
+
 # Install Atom
 ./fedora-install-atom.sh
 
