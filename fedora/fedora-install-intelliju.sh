@@ -45,3 +45,6 @@ StartupNotify=true
 Terminal=false
 StartupWMClass=jetbrains-idea
 EOF'
+
+# Clean Up
+rm idea*.tar.gz
