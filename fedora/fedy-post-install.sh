@@ -29,6 +29,9 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 # Install Atom
 ./fedora-install-atom.sh
 
+# Install Arc Theme
+./fedora-install-arc-theme.sh
+
 # NVIDIA Driver
 sudo dnf -y install xorg-x11-drv-nvidia akmod-nvidia "kernel-devel-uname-r == $(uname -r)"
 
