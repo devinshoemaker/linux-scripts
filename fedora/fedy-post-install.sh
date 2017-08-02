@@ -25,6 +25,7 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 
 # Install IntelliJ Idea Ultimate
 ./fedora-install-intelliju.sh
+cp -r ../.IntelliJIdea* ~/
 
 # Install Atom
 ./fedora-install-atom.sh
