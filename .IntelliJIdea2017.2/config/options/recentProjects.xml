@@ -1,0 +1,25 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Code/android/nextcloud-android" />
+      </list>
+    </option>
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Code/android/nextcloud-android">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4694.70" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1499983206624" />
+              <option name="buildTimestamp" value="1499153403453" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/Code/android" />
+  </component>
+</application>
