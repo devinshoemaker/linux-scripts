@@ -23,6 +23,9 @@ sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 # Install Google Chrome
 ./fedora-install-chrome.sh
 
+# Install Flash Plugin
+./fedora-install-flash.sh
+
 # Install GitKraken
 ./fedora-install-gitkraken.sh
 
