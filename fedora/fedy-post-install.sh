@@ -47,3 +47,6 @@ sudo dnf -y install fuse-exfat
 
 # Update Packages
 sudo dnf -y upgrade --refresh
+
+# Reboot
+sudo reboot
