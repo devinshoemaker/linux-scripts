@@ -14,6 +14,9 @@ sudo dnf -y install gnome-shell-extension-no-topleft-hot-corner gnome-shell-exte
 # .bashrc
 echo export EDITOR=nano >> ~/.bashrc
 
+# Permissive SELinux
+sudo sed -i s/^SELINUX=.*$/SELINUX=permissive/g /etc/selinux/config
+
 # Install Fedy
 sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 
