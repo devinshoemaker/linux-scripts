@@ -20,8 +20,14 @@ sudo sed -i s/^SELINUX=.*$/SELINUX=permissive/g /etc/selinux/config
 # Install Fedy
 sudo sh -c 'curl https://www.folkswithhats.org/installer | bash'
 
+# exFAT Support
+sudo dnf -y install fuse-exfat
+
 # Install media codecs
 sudo dnf install gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg gstreamer1-libav gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools gstreamer1-plugins-good-extras gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-good gstreamer1-plugins-base gstreamer1
+
+# NVIDIA Driver
+sudo dnf -y install xorg-x11-drv-nvidia akmod-nvidia "kernel-devel-uname-r == $(uname -r)"
 
 # Install Google Chrome
 ./fedora-install-chrome.sh
@@ -41,12 +47,6 @@ cp -r ../.IntelliJIdea* ~/
 
 # Install Arc Theme
 ./fedora-install-arc-theme.sh
-
-# NVIDIA Driver
-sudo dnf -y install xorg-x11-drv-nvidia akmod-nvidia "kernel-devel-uname-r == $(uname -r)"
-
-# exFAT Support
-sudo dnf -y install fuse-exfat
 
 # Update Packages
 sudo dnf -y upgrade --refresh
