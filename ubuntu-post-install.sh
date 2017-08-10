@@ -14,6 +14,7 @@ sudo apt -y install couchdb ubuntu-make
 
 # Install IntelliJ Ultimate
 umake ide idea-ultimate
+cp -r .IntelliJIdea* ~/
 
 # Install Visual Studio Code
 umake ide visual-studio-code --accept-license
