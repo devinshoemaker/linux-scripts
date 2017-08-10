@@ -7,7 +7,7 @@ sudo apt -y update &&
 sudo apt -y upgrade
 
 # Install User Applications
-sudo apt -y install gparted guake pulseaudio-equalizer
+sudo apt -y install gparted guake pulseaudio-equalizer xclip
 
 # Install Development Tools
 sudo apt -y install couchdb
