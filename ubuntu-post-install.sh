@@ -18,5 +18,10 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt -y update &&
 sudo apt -y install google-chrome-stable
 
+# Install GitKraken
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb &&
+sudo dpkg -i gitkraken-amd64.deb &&
+rm gitkraken-amd64.deb
+
 # Remove Packages No Longer Required
 sudo apt -y autoremove
