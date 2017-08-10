@@ -10,7 +10,7 @@ sudo apt -y upgrade
 sudo apt -y install gparted guake pulseaudio-equalizer xclip
 
 # Install Development Tools
-sudo apt -y install couchdb
+sudo apt -y install couchdb ubuntu-make
 
 # Install Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - &&
