@@ -11,6 +11,8 @@ sudo apt -y install gparted guake pulseaudio-equalizer xclip
 
 # Install GNOME Shell Extensions
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
+gnome-shell-extension-tool -e dashtodock
+gnome-shell-extension-tool -e top-icons-plus
 
 # Install Development Tools
 sudo apt -y install couchdb ubuntu-make
