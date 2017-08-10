@@ -33,6 +33,3 @@ rm gitkraken-amd64.deb
 # Remove Packages No Longer Required
 sudo apt -y autoremove
 
-# Reboot
-sudo reboot
-
