@@ -38,7 +38,7 @@ rm gitkraken-amd64.deb
 # Install Arc Theme
 sudo add-apt-repository -y ppa:noobslab/icons &&
 sudo apt -y update &&
-sudo apt -y install arch-theme arc-icons
+sudo apt -y install arc-theme arc-icons
 
 # Install Paper Theme
 sudo add-apt-repository -y ppa:snwh/pulp &&
