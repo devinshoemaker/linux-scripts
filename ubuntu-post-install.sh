@@ -7,7 +7,7 @@ sudo apt -y update &&
 sudo apt -y upgrade
 
 # Install User Applications
-sudo apt -y install gparted guake pulseaudio-equalizer xclip
+sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer xclip
 
 # Install GNOME Shell Extensions
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
