@@ -40,5 +40,9 @@ sudo add-apt-repository -y ppa:snwh/pulp &&
 sudo apt -y update &&
 sudo apt -y install paper-gtk-theme paper-icon-theme
 
+# Update Packages
+sudo apt -y update &&
+sudo apt -y upgrade
+
 # Remove Packages No Longer Required
 sudo apt -y autoremove
