@@ -35,7 +35,12 @@ wget https://release.gitkraken.com/linux/gitkraken-amd64.deb &&
 sudo dpkg -i gitkraken-amd64.deb &&
 rm gitkraken-amd64.deb
 
-# Install Paper Icon Theme
+# Install Arc Theme
+sudo add-apt-repository -y ppa:noobslab/icons &&
+sudo apt -y update &&
+sudo apt -y install arch-theme arc-icons
+
+# Install Paper Theme
 sudo add-apt-repository -y ppa:snwh/pulp &&
 sudo apt -y update &&
 sudo apt -y install paper-gtk-theme paper-icon-theme
