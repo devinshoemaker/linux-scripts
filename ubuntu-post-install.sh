@@ -6,6 +6,9 @@
 sudo apt -y update &&
 sudo apt -y upgrade
 
+# Install NVIDIA Driver
+sudo ubuntu-drivers autoinstall
+
 # Install User Applications
 sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer xclip
 
