@@ -34,9 +34,7 @@ sudo apt -y update &&
 sudo apt -y install google-chrome-stable
 
 # Install GitKraken
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb &&
-sudo dpkg -i gitkraken-amd64.deb &&
-rm gitkraken-amd64.deb
+./ubuntu-install-gitkraken.sh
 
 # Install Arc Theme
 sudo add-apt-repository -y ppa:noobslab/icons &&
