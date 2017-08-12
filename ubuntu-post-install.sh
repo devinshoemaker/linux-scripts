@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 16.04/17.04 Post Install Script
+# Ubuntu 17.04 Post Install Script
 
 # Update Packages
 sudo apt -y update &&
