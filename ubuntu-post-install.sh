@@ -54,3 +54,15 @@ sudo apt -y upgrade
 
 # Remove Packages No Longer Required
 sudo apt -y autoremove
+
+# Install Ionic and Download Source Code
+sudo apt -y install curl
+curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+sudo apt -y install nodejs
+sudo npm install -g ionic cordova
+mkdir -p ~/code/ionic
+cd ~/code/ionic
+git clone https://github.com/dshoe/taskit-ionic.git
+sudo npm install -g add-cors-to-couchdb
+add-cors-to-couchdb
+git clone https://github.com/dshoe/coinbase-profit.git
