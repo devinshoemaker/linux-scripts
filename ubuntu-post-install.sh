@@ -66,3 +66,8 @@ git clone https://github.com/dshoe/taskit-ionic.git
 sudo npm install -g add-cors-to-couchdb
 add-cors-to-couchdb
 git clone https://github.com/dshoe/coinbase-profit.git
+
+# Fix Equalizer
+sudo passwd root
+su -c 'echo load-module module-equalizer-sink  >> /etc/pulse/default.pa
+echo load-module module-dbus-protocol >> /etc/pulse/default.pa'
