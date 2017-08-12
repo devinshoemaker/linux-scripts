@@ -10,7 +10,7 @@ sudo apt -y upgrade
 sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer xclip
+sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer virtualbox xclip
 
 # Install GNOME Shell Extensions
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
