@@ -1,0 +1,7 @@
+<keymap version="1" name="Default for GNOME copy" parent="Default for GNOME">
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl f4" />
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="EditorSelectWord" />
+</keymap>
