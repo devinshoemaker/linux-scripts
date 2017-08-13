@@ -29,6 +29,9 @@ sudo apt -y install ubuntu-make
 umake ide idea-ultimate
 cp -r .IntelliJIdea* ~/
 
+# Install Android Studio
+umake android --accept-license
+
 # Install Visual Studio Code
 umake ide visual-studio-code --accept-license
 
