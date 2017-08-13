@@ -22,11 +22,3 @@ cd ~/.rbenv && src/configure && make -C src
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 # Restart shell
 exec bash
-# Check if rbenv is correctly installed
-type rbenv
-# Install ruby-build as rbenv plugin
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-
-# Install and Enable Ruby 2.4.1
-rbenv install 2.4.1
-rbenv global 2.4.1
