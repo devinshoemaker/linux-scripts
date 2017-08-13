@@ -18,7 +18,12 @@ gnome-shell-extension-tool -e dashtodock
 gnome-shell-extension-tool -e top-icons-plus
 
 # Install Development Tools
-sudo apt -y install couchdb ubuntu-make
+sudo apt -y install couchdb
+
+# Install Ubuntu Make from PPA
+sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
+sudo apt update
+sudo apt -y install ubuntu-make
 
 # Install IntelliJ Ultimate
 umake ide idea-ultimate
