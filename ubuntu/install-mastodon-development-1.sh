@@ -2,6 +2,8 @@
 
 # Ubuntu 16.04/17.04 Mastodon Install Development Script
 
+CURRENT_DIRECTORY=$(pwd)
+
 # Install curl
 sudo apt -y install curl
 
@@ -22,3 +24,5 @@ cd ~/.rbenv && src/configure && make -C src
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 # Restart shell
 exec bash
+
+cd $CURRENT_DIRECTORY
