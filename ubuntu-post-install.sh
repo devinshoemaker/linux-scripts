@@ -3,7 +3,7 @@
 # Ubuntu 17.04 Post Install Script
 
 # Update Packages
-sudo apt -y update &&
+sudo apt update &&
 sudo apt -y upgrade
 
 # Install NVIDIA Driver
@@ -43,16 +43,16 @@ umake ide visual-studio-code --accept-license
 
 # Install Arc Theme
 sudo add-apt-repository -y ppa:noobslab/icons &&
-sudo apt -y update &&
+sudo apt update &&
 sudo apt -y install arc-theme arc-icons
 
 # Install Paper Theme
 sudo add-apt-repository -y ppa:snwh/pulp &&
-sudo apt -y update &&
+sudo apt update &&
 sudo apt -y install paper-gtk-theme paper-icon-theme
 
 # Update Packages
-sudo apt -y update &&
+sudo apt update &&
 sudo apt -y upgrade
 
 # Remove Packages No Longer Required
