@@ -36,10 +36,10 @@ umake android --accept-license
 umake ide visual-studio-code --accept-license
 
 # Install Google Chrome
-./ubuntu-install-chrome.sh
+./install-chrome.sh
 
 # Install GitKraken
-./ubuntu-install-gitkraken.sh
+./install-gitkraken.sh
 
 # Install Arc Theme
 sudo add-apt-repository -y ppa:noobslab/icons &&
