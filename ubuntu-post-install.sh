@@ -30,6 +30,9 @@ cp -r .IntelliJIdea* ~/
 # Install Android Studio
 umake android --accept-license
 
+# Install Atom
+umake ide atom
+
 # Install Visual Studio Code
 umake ide visual-studio-code --accept-license
 
