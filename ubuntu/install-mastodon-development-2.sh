@@ -19,9 +19,15 @@ git clone https://github.com/tootsuite/mastodon.git
 cd ~/code/mastodon
 # Checkout to the latest stable branch
 git checkout $(git tag -l | sort -V | tail -n 1)
+# Add Ruby 2.4.1 to PATH
+export PATH="$HOME/.rbenv/versions/2.4.1/bin:$PATH"
+echo 'export PATH="$HOME/.rbenv/versions/2.4.1/bin:$PATH"' >> ~/.bashrc
 # Install bundler
 gem install bundler
 # Use bundler to install the rest of the Ruby dependencies
-bundle install --deployment --without development test
+bundle install
 # Use yarn to install node.js dependencies
 yarn install --pure-lockfile
+
+# Continue Part 3
+nano install-mastodon-development-3.sh
