@@ -1,9 +1,47 @@
 <application>
+  <component name="StatisticsApplicationUsages">
+    <group name="file-type">
+      <project id="coinbase-profit" values="Properties,TSLint,JavaScript,SourceMap,JSHint,C#,Eclipse,Images,JSON,SCSS,C++,PLAIN_TEXT,UNKNOWN,XML,YAML,CLASS,Groovy,CSS,JAVA,JSCS,HTML,Markdown,DTD,TypeScript" collectionTime="1502927102867" />
+    </group>
+    <group name="images.ide.background">
+      <project id="coinbase-profit" values="editor=0,frame=0" collectionTime="1502927102869" />
+    </group>
+    <group name="vcs">
+      <project id="coinbase-profit" values="Git" collectionTime="1502927102863" />
+    </group>
+    <group name="VCS Log Ui Settings">
+      <project id="coinbase-profit" values="ui.sort.linear.bek.disabled,ui.highlighter.MY_COMMITS.enabled,ui.sort.bek.disabled,ui.details.enabled,ui.labels.compact.enabled,ui.textFilter.regex.disabled,ui.sort.normal.enabled,ui.highlighter.MERGE_COMMITS.enabled,ui.highlighter.CURRENT_BRANCH.enabled,ui.labels.showTagNames.disabled,ui.textFilter.matchCase.disabled,ui.long.edges.disabled" collectionTime="1502927102869" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="coinbase-profit" values="data.branches.count.1+,data.git.root.count.1,data.users.count.1+,data.commit.count.1+" collectionTime="1502927102869" />
+    </group>
+    <group name="vcs-options">
+      <project id="coinbase-profit" values="commit.before.check.todo.enabled,offer.remove.empty.changelist.show_confirmation,show.changes.preview.disabled,commit.clear.initial.comment.disabled,perform.update.in.background.enabled,offer.move.partially.committed.disabled,commit.before.reformat.file.disabled,perform.add_remove.in.background.enabled,changelist.preselect.existing.disabled,commit.before.optimize.imports.disabled,perform.rollback.in.background.disabled,commit.before.check.files.up.to.date.disabled,perform.commit.in.background.enabled,offer.move.failed.committed.do_nothing_silently,commit.before.check.non.empty.comment.disabled,commit.before.rearrange.disabled,include.text.into.shelf.enabled,perform.edit.in.background.enabled,commit.show.unversioned.enabled,check.conflicts.in.background.disabled,perform.checkout.in.background.enabled,commit.before.check.code.cleanup.disabled,changelist.make.new.active.disabled,commit.before.check.code.smell.disabled,commit.before.reformat.project.disabled,commit.use.right.margin.enabled" collectionTime="1502927102864" />
+    </group>
+    <group name="Git">
+      <project id="coinbase-profit" values="config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,data.local.branches.count.2+,config.save.policy.STASH,data.remotes.in.project.1,config.ssh.enabled,data.remote.branches.count.2+,config.cherry-pick.autocommit.disabled,config.push.autoupdate.disabled,config.push.update.all.roots.enabled,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.detached.enabled" collectionTime="1502927102871" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="coinbase-profit" values="Directory,Project" collectionTime="1502927102960" />
+    </group>
+    <group name="module type">
+      <project id="coinbase-profit" values="JAVA_MODULE" collectionTime="1502927102864" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="coinbase-profit" values="ECMAScript 5.1" collectionTime="1502927102960" />
+    </group>
+    <group name="module-language-level">
+      <project id="coinbase-profit" values="JDK_1_9" collectionTime="1502927102871" />
+    </group>
+  </component>
   <component name="UsageTrigger">
     <counts>
       <entry feature="StripeButton[Version_Control].shown" count="1" />
+      <entry feature="git.branch.checkout.local" count="4" />
       <entry feature="ide.settings.Keymap" count="1" />
-      <entry feature="ideaapp.started" count="8" />
+      <entry feature="ideaapp.started" count="15" />
+      <entry feature="terminal.linux" count="7" />
+      <entry feature="vcs.log.ShowDiff" count="2" />
       <entry feature="welcome.screen.WelcomeScreen.Configure" count="4" />
       <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="6" />
       <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="1" />

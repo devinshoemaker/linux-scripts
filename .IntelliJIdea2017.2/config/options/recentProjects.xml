@@ -2,11 +2,17 @@
   <component name="RecentProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/code/ionic/taskit-ionic" />
         <option value="$USER_HOME$/code/ionic/coinbase-profit" />
         <option value="$USER_HOME$/Code/android/nextcloud-android" />
       </list>
     </option>
-    <option name="lastPath" value="$USER_HOME$/code/ionic/coinbase-profit" />
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/code/ionic/coinbase-profit" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/code/ionic/taskit-ionic" />
     <option name="additionalInfo">
       <map>
         <entry key="$USER_HOME$/Code/android/nextcloud-android">
@@ -23,11 +29,22 @@
         <entry key="$USER_HOME$/code/ionic/coinbase-profit">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="IU-172.3544.35" />
+              <option name="build" value="IU-172.3757.52" />
               <option name="productionCode" value="IU" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1502548256792" />
-              <option name="buildTimestamp" value="1501515099372" />
+              <option name="projectOpenTimestamp" value="1502925302845" />
+              <option name="buildTimestamp" value="1502780399544" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/ionic/taskit-ionic">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.3757.52" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1502932160678" />
+              <option name="buildTimestamp" value="1502780399544" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
