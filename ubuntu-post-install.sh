@@ -37,10 +37,10 @@ umake ide atom
 umake ide visual-studio-code --accept-license
 
 # Install Google Chrome
-./install-chrome.sh
+./ubuntu/install-chrome.sh
 
 # Install GitKraken
-./install-gitkraken.sh
+./ubuntu/install-gitkraken.sh
 
 # Install Arc Theme
 sudo add-apt-repository -y ppa:noobslab/icons &&
