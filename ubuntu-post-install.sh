@@ -16,7 +16,10 @@ sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer virtualbox xc
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
 
 # Install Development Tools
-sudo apt -y install couchdb docker
+sudo apt -y install couchdb docker.io
+
+# Add User to Docker Group
+sudo usermod -aG docker $(whoami)
 
 # Install Ubuntu Make from PPA
 sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make &&
