@@ -22,7 +22,8 @@ sudo apt -y install imagemagick ffmpeg libpq-dev libxml2-dev libxslt1-dev file g
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-# Restart shell
-exec bash
 
 cd $CURRENT_DIRECTORY
+
+# Restart shell
+exec bash
