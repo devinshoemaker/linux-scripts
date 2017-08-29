@@ -11,6 +11,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 rbenv install 2.4.1
 rbenv global 2.4.1
 
+CURRENT_DIRECTORY=$(pwd)
 mkdir -p ~/code
 cd ~/code
 # Clone the mastodon git repository into ~/code
@@ -30,4 +31,4 @@ bundle install
 yarn install --pure-lockfile
 
 # Continue Part 3
-nano install-mastodon-development-3.sh
+nano $CURRENT_DIRECTORY/install-mastodon-development-3.sh
