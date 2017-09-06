@@ -12,6 +12,9 @@ sudo ubuntu-drivers autoinstall
 # Install User Applications
 sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer virtualbox xclip
 
+# Install Snap Packages
+sudo snap install discord
+
 # Install GNOME Shell Extensions
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
 
