@@ -66,7 +66,7 @@ sudo apt -y upgrade
 sudo apt -y autoremove
 
 # Install Ionic and Download Source Code
-./install-ionic.sh
+./ubuntu/install-ionic.sh
 
 # Fix Equalizer
 sudo passwd root
