@@ -72,3 +72,7 @@ sudo apt -y autoremove
 sudo passwd root
 su -c 'echo load-module module-equalizer-sink  >> /etc/pulse/default.pa
 echo load-module module-dbus-protocol >> /etc/pulse/default.pa'
+
+# .bashrc
+echo alias update='sudo apt update && apt list --upgradable' >> ~/.bashrc
+echo 'alias upgrade="sudo apt -y upgrade"' >> ~/.bashrc
