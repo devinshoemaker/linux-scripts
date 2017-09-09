@@ -45,10 +45,10 @@ umake ide atom
 umake ide visual-studio-code --accept-license
 
 # Install Google Chrome
-./ubuntu/install-chrome.sh
+./ubuntu/google-chrome.sh
 
 # Install GitKraken
-./ubuntu/install-gitkraken.sh
+./ubuntu/gitkraken.sh
 
 # Install Arc Theme
 ./ubuntu/arc-theme.sh
@@ -64,7 +64,7 @@ sudo apt -y upgrade
 sudo apt -y autoremove
 
 # Install Ionic and Download Source Code
-./ubuntu/install-ionic.sh
+./ubuntu/ionic.sh
 
 # Fix Equalizer
 sudo passwd root

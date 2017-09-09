@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Install Arc Theme on Ubuntu 17.04
+# Ubuntu 17.04 Install Arc Theme
 
 sudo add-apt-repository -y ppa:noobslab/icons
 sudo apt update
