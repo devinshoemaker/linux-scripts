@@ -51,9 +51,7 @@ umake ide visual-studio-code --accept-license
 ./ubuntu/install-gitkraken.sh
 
 # Install Arc Theme
-sudo add-apt-repository -y ppa:noobslab/icons &&
-sudo apt update &&
-sudo apt -y install arc-theme arc-icons
+./ubuntu/arc-theme.sh
 
 # Install Paper Theme
 sudo add-apt-repository -y ppa:snwh/pulp &&
