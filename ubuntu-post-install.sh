@@ -54,9 +54,7 @@ umake ide visual-studio-code --accept-license
 ./ubuntu/arc-theme.sh
 
 # Install Paper Theme
-sudo add-apt-repository -y ppa:snwh/pulp &&
-sudo apt update &&
-sudo apt -y install paper-gtk-theme paper-icon-theme
+./ubuntu/paper-theme.sh
 
 # Update Packages
 sudo apt update &&
