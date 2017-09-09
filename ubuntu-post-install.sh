@@ -20,6 +20,7 @@ sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-i
 
 # Install Development Tools
 sudo apt -y install couchdb docker.io
+sudo systemctl stop couchdb
 sudo systemctl disable couchdb
 
 # Add User to Docker Group
