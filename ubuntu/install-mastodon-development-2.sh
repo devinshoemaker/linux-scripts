@@ -11,18 +11,21 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 rbenv install 2.4.1
 rbenv global 2.4.1
 
+# Add Ruby 2.4.1 to PATH
+export PATH="$HOME/.rbenv/versions/2.4.1/bin:$PATH"
+echo 'export PATH="$HOME/.rbenv/versions/2.4.1/bin:$PATH"' >> ~/.bashrc
+
 CURRENT_DIRECTORY=$(pwd)
 mkdir -p ~/code
 cd ~/code
+
 # Clone the mastodon git repository into ~/code
 git clone https://github.com/tootsuite/mastodon.git
 # Change directory to ~/code/mastodon
 cd ~/code/mastodon
 # Checkout to the latest stable branch
 git checkout $(git tag -l | sort -V | tail -n 1)
-# Add Ruby 2.4.1 to PATH
-export PATH="$HOME/.rbenv/versions/2.4.1/bin:$PATH"
-echo 'export PATH="$HOME/.rbenv/versions/2.4.1/bin:$PATH"' >> ~/.bashrc
+
 # Install bundler
 gem install bundler
 # Use bundler to install the rest of the Ruby dependencies
