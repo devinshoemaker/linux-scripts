@@ -34,4 +34,4 @@ bundle install
 yarn install --pure-lockfile
 
 # Continue Part 3
-nano $CURRENT_DIRECTORY/install-mastodon-development-3.sh
+nano $CURRENT_DIRECTORY/mastodon-development-3.sh

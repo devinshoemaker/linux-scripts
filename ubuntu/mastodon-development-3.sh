@@ -8,4 +8,4 @@
 # \q
 
 # Continue Part 4
-./install-mastodon-development-4.sh
+./mastodon-development-4.sh
