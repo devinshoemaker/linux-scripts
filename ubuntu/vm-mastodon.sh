@@ -3,7 +3,7 @@
 # Ubuntu 17.04 Mastodon VM Setup Script
 
 # Update Packages
-sudo apt -y update
+sudo apt update
 sudo apt -y upgrade
 
 # Install Ubuntu Make
