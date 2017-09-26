@@ -21,6 +21,8 @@ cd ~/code/ionic
 
 git clone https://github.com/dshoe/taskit-ionic.git
 sudo npm install -g add-cors-to-couchdb
+sudo systemctl start couchdb
 add-cors-to-couchdb
+sudo systecmctl stop couchdb
 
 git clone https://github.com/dshoe/coinbase-profit.git
