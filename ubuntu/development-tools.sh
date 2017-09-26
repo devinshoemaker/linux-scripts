@@ -30,3 +30,6 @@ umake ide atom $HOME/.local/share/umake/ide/atom
 
 # Install Visual Studio Code
 umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
+
+# Install GitKraken
+./ubuntu/gitkraken.sh
