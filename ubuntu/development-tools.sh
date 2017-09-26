@@ -19,14 +19,14 @@ sudo apt update
 sudo apt -y install ubuntu-make
 
 # Install IntelliJ Ultimate
-umake ide idea-ultimate
+umake ide idea-ultimate $HOME/.local/share/umake/ide/idea-ultimate
 cp -r .IntelliJIdea* ~/
 
 # Install Android Studio
-umake android --accept-license
+umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
 # Install Atom
-umake ide atom
+umake ide atom $HOME/.local/share/umake/ide/atom
 
 # Install Visual Studio Code
-umake ide visual-studio-code --accept-license
+umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
