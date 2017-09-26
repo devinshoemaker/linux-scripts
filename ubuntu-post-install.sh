@@ -10,7 +10,7 @@ sudo apt -y upgrade
 sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt -y install gnome-boxes gparted guake pulseaudio-equalizer virtualbox xclip
+sudo apt -y install gnome-boxes gparted guake openvpn pulseaudio-equalizer virtualbox xclip
 
 # Install Snap Packages
 sudo snap install discord
