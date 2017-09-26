@@ -2,6 +2,9 @@
 
 # Ubuntu 17.04 Install Ionic and Download Source Code
 
+# Update Repositories
+sudo apt update
+
 # Install curl
 sudo apt -y install curl
 
