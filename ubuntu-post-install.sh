@@ -3,7 +3,7 @@
 # Ubuntu 17.04 Post Install Script
 
 # Update Packages
-sudo apt update &&
+sudo apt update
 sudo apt -y upgrade
 
 # Install NVIDIA Driver
@@ -34,7 +34,7 @@ sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-i
 ./ubuntu/paper-theme.sh
 
 # Update Packages
-sudo apt update &&
+sudo apt update
 sudo apt -y upgrade
 
 # Remove Packages No Longer Required
