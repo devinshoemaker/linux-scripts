@@ -2,6 +2,9 @@
 
 # Ubuntu 17.04 Development Tools
 
+# Update Repositories
+sudo apt update
+
 # Install Packages
 sudo apt -y install couchdb docker.io
 sudo systemctl stop couchdb
