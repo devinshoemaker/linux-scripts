@@ -14,8 +14,8 @@ sudo systemctl disable couchdb
 sudo usermod -aG docker $(whoami)
 
 # Install Ubuntu Make from PPA
-sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make &&
-sudo apt update &&
+sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
+sudo apt update
 sudo apt -y install ubuntu-make
 
 # Install IntelliJ Ultimate
