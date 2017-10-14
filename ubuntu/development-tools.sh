@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Development Tools
+# Ubuntu 17.10 Development Tools
 
 # Update Repositories
 sudo apt update
@@ -33,3 +33,6 @@ umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --a
 
 # Install GitKraken
 ./ubuntu/gitkraken.sh
+
+# Install Angular and Ionic
+./ubuntu/angular-ionic.sh

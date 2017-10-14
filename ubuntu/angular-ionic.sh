@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Install Ionic and Download Source Code
+# Ubuntu 17.10 Install Ionic and Download Source Code
 
 # Update Repositories
 sudo apt update
@@ -10,7 +10,10 @@ sudo apt -y install curl
 
 # Install Modern Node.js
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
-sudo apt -y install nodejs
+sudo apt -y install nodejs npm
+
+# Install Angular
+sudo npm install -g @angular/cli
 
 # Install Ionic and Cordova
 sudo npm install -g ionic cordova
