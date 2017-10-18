@@ -10,7 +10,7 @@ sudo apt -y upgrade
 #sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt -y install gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
+sudo apt -y install exfat-fuse gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
 
 # Restart Network Service
 sudo /etc/init.d/networking restart
