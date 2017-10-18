@@ -45,3 +45,6 @@ sudo apt -y autoremove
 
 # .bashrc
 ./ubuntu/bashrc-tweaks.sh
+
+# Change GDM Theme
+sudo update-alternatives --config gdm3.css
