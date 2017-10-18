@@ -4,4 +4,5 @@
 
 sudo apt -y install pulseaudio-equalizer
 sudo passwd root
-su -c 'echo load-module module-dbus-protocol >> /etc/pulse/default.pa'
+su -c 'echo load-module module-equalizer-sink  >> /etc/pulse/default.pa
+echo load-module module-dbus-protocol >> /etc/pulse/default.pa'
