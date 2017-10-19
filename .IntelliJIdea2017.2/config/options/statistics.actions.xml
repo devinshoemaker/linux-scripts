@@ -1,0 +1,28 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="$Undo" count="26" />
+      <entry action="CheckinProject" count="6" />
+      <entry action="CloseProject" count="1" />
+      <entry action="EditorBackSpace" count="21" />
+      <entry action="EditorChooseLookupItem" count="3" />
+      <entry action="EditorCopy" count="1" />
+      <entry action="EditorDown" count="2" />
+      <entry action="EditorEnter" count="21" />
+      <entry action="EditorLeft" count="17" />
+      <entry action="EditorLeftWithSelection" count="18" />
+      <entry action="EditorNextWord" count="3" />
+      <entry action="EditorPaste" count="2" />
+      <entry action="EditorRight" count="26" />
+      <entry action="EditorRightWithSelection" count="1" />
+      <entry action="EditorTab" count="2" />
+      <entry action="EditorUp" count="1" />
+      <entry action="Find" count="1" />
+      <entry action="GotoClass" count="1" />
+      <entry action="GotoFile" count="3" />
+      <entry action="SearchEverywhere" count="2" />
+      <entry action="ShowSettings" count="1" />
+      <entry action="Vcs.Push" count="1" />
+    </counts>
+  </component>
+</application>

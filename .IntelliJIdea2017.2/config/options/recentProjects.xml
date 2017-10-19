@@ -2,6 +2,8 @@
   <component name="RecentProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/code/angular/angular-tour-of-heroes" />
+        <option value="$USER_HOME$/code/angular/my-app" />
         <option value="$USER_HOME$/code/ionic/taskit-ionic" />
         <option value="$USER_HOME$/code/ionic/coinbase-profit" />
         <option value="$USER_HOME$/Code/android/nextcloud-android" />
@@ -9,10 +11,10 @@
     </option>
     <option name="openPaths">
       <list>
-        <option value="$USER_HOME$/code/ionic/coinbase-profit" />
+        <option value="$USER_HOME$/code/angular/angular-tour-of-heroes" />
       </list>
     </option>
-    <option name="lastPath" value="$USER_HOME$/code/ionic/taskit-ionic" />
+    <option name="lastPath" value="$USER_HOME$/code/angular/angular-tour-of-heroes" />
     <option name="additionalInfo">
       <map>
         <entry key="$USER_HOME$/Code/android/nextcloud-android">
@@ -23,6 +25,28 @@
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="projectOpenTimestamp" value="1499983206624" />
               <option name="buildTimestamp" value="1499153403453" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/angular/angular-tour-of-heroes">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1508412659424" />
+              <option name="buildTimestamp" value="1506404276271" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/angular/my-app">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-172.4343.14" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1508327118836" />
+              <option name="buildTimestamp" value="1506404236302" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

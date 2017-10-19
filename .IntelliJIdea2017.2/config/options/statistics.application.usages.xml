@@ -1,50 +1,73 @@
 <application>
   <component name="StatisticsApplicationUsages">
-    <group name="file-type">
-      <project id="coinbase-profit" values="Properties,TSLint,JavaScript,SourceMap,JSHint,C#,Eclipse,Images,JSON,SCSS,C++,PLAIN_TEXT,UNKNOWN,XML,YAML,CLASS,Groovy,CSS,JAVA,JSCS,HTML,Markdown,DTD,TypeScript" collectionTime="1502927102867" />
-    </group>
-    <group name="images.ide.background">
-      <project id="coinbase-profit" values="editor=0,frame=0" collectionTime="1502927102869" />
+    <group name="Git">
+      <project id="angular-tour-of-heroes" values="config.save.policy.STASH,config.cherry-pick.autocommit.disabled,config.ssh.enabled,config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,data.remotes.in.project.1,config.update.type.BRANCH_DEFAULT,data.local.branches.count.2+,config.push.update.all.roots.enabled,config.push.autoupdate.disabled,config.warn.about.detached.enabled,data.remote.branches.count.2+,config.force.push.enabled" collectionTime="1508328938259" />
+      <project id="coinbase-profit" values="config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.save.policy.STASH,data.remotes.in.project.1,config.push.update.all.roots.enabled,data.local.branches.count.2+,config.ssh.enabled,config.warn.about.crlf.enabled,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED,config.push.autoupdate.disabled,data.remote.branches.count.2+,config.warn.about.detached.enabled" collectionTime="1502927102871" />
+      <project id="my-app" values="config.push.autoupdate.disabled,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,data.local.branches.count.1,data.remote.branches.count.0,config.save.policy.STASH,config.repo.sync.NOT_DECIDED,config.warn.about.detached.enabled,config.force.push.enabled,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,data.remotes.in.project.0" collectionTime="1508076147772" />
     </group>
     <group name="vcs">
+      <project id="angular-tour-of-heroes" values="Git" collectionTime="1508328938245" />
       <project id="coinbase-profit" values="Git" collectionTime="1502927102863" />
-    </group>
-    <group name="VCS Log Ui Settings">
-      <project id="coinbase-profit" values="ui.sort.linear.bek.disabled,ui.highlighter.MY_COMMITS.enabled,ui.sort.bek.disabled,ui.details.enabled,ui.labels.compact.enabled,ui.textFilter.regex.disabled,ui.sort.normal.enabled,ui.highlighter.MERGE_COMMITS.enabled,ui.highlighter.CURRENT_BRANCH.enabled,ui.labels.showTagNames.disabled,ui.textFilter.matchCase.disabled,ui.long.edges.disabled" collectionTime="1502927102869" />
-    </group>
-    <group name="VCS Log 2">
-      <project id="coinbase-profit" values="data.branches.count.1+,data.git.root.count.1,data.users.count.1+,data.commit.count.1+" collectionTime="1502927102869" />
-    </group>
-    <group name="vcs-options">
-      <project id="coinbase-profit" values="commit.before.check.todo.enabled,offer.remove.empty.changelist.show_confirmation,show.changes.preview.disabled,commit.clear.initial.comment.disabled,perform.update.in.background.enabled,offer.move.partially.committed.disabled,commit.before.reformat.file.disabled,perform.add_remove.in.background.enabled,changelist.preselect.existing.disabled,commit.before.optimize.imports.disabled,perform.rollback.in.background.disabled,commit.before.check.files.up.to.date.disabled,perform.commit.in.background.enabled,offer.move.failed.committed.do_nothing_silently,commit.before.check.non.empty.comment.disabled,commit.before.rearrange.disabled,include.text.into.shelf.enabled,perform.edit.in.background.enabled,commit.show.unversioned.enabled,check.conflicts.in.background.disabled,perform.checkout.in.background.enabled,commit.before.check.code.cleanup.disabled,changelist.make.new.active.disabled,commit.before.check.code.smell.disabled,commit.before.reformat.project.disabled,commit.use.right.margin.enabled" collectionTime="1502927102864" />
-    </group>
-    <group name="Git">
-      <project id="coinbase-profit" values="config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,data.local.branches.count.2+,config.save.policy.STASH,data.remotes.in.project.1,config.ssh.enabled,data.remote.branches.count.2+,config.cherry-pick.autocommit.disabled,config.push.autoupdate.disabled,config.push.update.all.roots.enabled,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.detached.enabled" collectionTime="1502927102871" />
-    </group>
-    <group name="javaScript Scope Usages">
-      <project id="coinbase-profit" values="Directory,Project" collectionTime="1502927102960" />
-    </group>
-    <group name="module type">
-      <project id="coinbase-profit" values="JAVA_MODULE" collectionTime="1502927102864" />
+      <project id="my-app" values="Git" collectionTime="1508076147759" />
     </group>
     <group name="JavaScript versions">
+      <project id="angular-tour-of-heroes" values="ECMAScript 5.1" collectionTime="1508328938342" />
       <project id="coinbase-profit" values="ECMAScript 5.1" collectionTime="1502927102960" />
+      <project id="my-app" values="ECMAScript 5.1" collectionTime="1508076147890" />
     </group>
     <group name="module-language-level">
+      <project id="angular-tour-of-heroes" values="JDK_1_9" collectionTime="1508328938259" />
       <project id="coinbase-profit" values="JDK_1_9" collectionTime="1502927102871" />
+      <project id="my-app" values="JDK_1_9" collectionTime="1508076147772" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="angular-tour-of-heroes" values="Project,Directory" collectionTime="1508328938342" />
+      <project id="coinbase-profit" values="Directory,Project" collectionTime="1502927102960" />
+      <project id="my-app" values="Directory,Project" collectionTime="1508076147890" />
+    </group>
+    <group name="images.ide.background">
+      <project id="angular-tour-of-heroes" values="frame 0,editor 0" collectionTime="1508328938257" />
+      <project id="coinbase-profit" values="frame 0,editor 0" collectionTime="1502927102869" />
+      <project id="my-app" values="frame 0,editor 0" collectionTime="1508076147767" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="angular-tour-of-heroes" values="data.commit.count.1+,data.users.count.1+,data.branches.count.1+,data.git.root.count.1" collectionTime="1508328938256" />
+      <project id="coinbase-profit" values="data.commit.count.1+,data.branches.count.1+,data.users.count.1+,data.git.root.count.1" collectionTime="1502927102869" />
+      <project id="my-app" values="data.git.root.count.1,data.users.count.1+,data.commit.count.1+,data.branches.count.1+" collectionTime="1508076147766" />
+    </group>
+    <group name="file-type">
+      <project id="angular-tour-of-heroes" values="PLAIN_TEXT,Markdown,JSON,JavaScript,CSS,UNKNOWN,HTML,Images,TypeScript,TSLint" collectionTime="1508328938255" />
+      <project id="coinbase-profit" values="CSS,YAML,JSON,C++,Eclipse,JAVA,Markdown,Groovy,JSHint,HTML,C#,TSLint,JSCS,DTD,SourceMap,Properties,XML,CLASS,JavaScript,SCSS,Images,TypeScript,PLAIN_TEXT,UNKNOWN" collectionTime="1502927102867" />
+      <project id="my-app" values="CSS,TypeScript,Markdown,JSON,JavaScript,Images,UNKNOWN,HTML,PLAIN_TEXT,TSLint" collectionTime="1508076147764" />
+    </group>
+    <group name="VCS Log Ui Settings">
+      <project id="coinbase-profit" values="ui.labels.compact.enabled,ui.sort.normal.enabled,ui.labels.showTagNames.disabled,ui.textFilter.regex.disabled,ui.details.enabled,ui.long.edges.disabled,ui.sort.bek.disabled,ui.highlighter.MERGE_COMMITS.enabled,ui.textFilter.matchCase.disabled,ui.sort.linear.bek.disabled,ui.highlighter.MY_COMMITS.enabled,ui.highlighter.CURRENT_BRANCH.enabled" collectionTime="1502927102869" />
+    </group>
+    <group name="module type">
+      <project id="angular-tour-of-heroes" values="JAVA_MODULE" collectionTime="1508328938246" />
+      <project id="coinbase-profit" values="JAVA_MODULE" collectionTime="1502927102864" />
+      <project id="my-app" values="JAVA_MODULE" collectionTime="1508076147760" />
+    </group>
+    <group name="vcs-options">
+      <project id="angular-tour-of-heroes" values="changelist.preselect.existing.disabled,changelist.make.new.active.disabled,commit.show.unversioned.enabled,offer.move.failed.committed.do_nothing_silently,commit.use.right.margin.enabled,perform.rollback.in.background.disabled,perform.add_remove.in.background.enabled,perform.update.in.background.enabled,commit.before.reformat.project.disabled,commit.before.check.code.cleanup.disabled,perform.edit.in.background.enabled,commit.before.rearrange.disabled,commit.clear.initial.comment.disabled,commit.before.check.todo.enabled,commit.before.optimize.imports.disabled,offer.remove.empty.changelist.show_confirmation,commit.before.check.non.empty.comment.disabled,include.text.into.shelf.enabled,commit.before.check.code.smell.enabled,commit.before.reformat.file.disabled,show.changes.preview.disabled,perform.checkout.in.background.enabled,offer.move.partially.committed.disabled,commit.before.check.files.up.to.date.disabled,check.conflicts.in.background.disabled,perform.commit.in.background.enabled" collectionTime="1508328938245" />
+      <project id="coinbase-profit" values="commit.before.check.files.up.to.date.disabled,offer.remove.empty.changelist.show_confirmation,commit.clear.initial.comment.disabled,offer.move.failed.committed.do_nothing_silently,show.changes.preview.disabled,commit.before.check.code.smell.disabled,perform.rollback.in.background.disabled,include.text.into.shelf.enabled,perform.update.in.background.enabled,perform.checkout.in.background.enabled,perform.edit.in.background.enabled,changelist.preselect.existing.disabled,check.conflicts.in.background.disabled,offer.move.partially.committed.disabled,commit.before.check.code.cleanup.disabled,commit.use.right.margin.enabled,commit.before.reformat.project.disabled,commit.before.reformat.file.disabled,commit.before.check.todo.enabled,perform.add_remove.in.background.enabled,commit.before.check.non.empty.comment.disabled,perform.commit.in.background.enabled,changelist.make.new.active.disabled,commit.show.unversioned.enabled,commit.before.rearrange.disabled,commit.before.optimize.imports.disabled" collectionTime="1502927102864" />
+      <project id="my-app" values="show.changes.preview.disabled,check.conflicts.in.background.disabled,commit.before.check.files.up.to.date.disabled,perform.edit.in.background.enabled,commit.before.reformat.project.disabled,commit.before.reformat.file.disabled,perform.commit.in.background.enabled,perform.update.in.background.enabled,offer.remove.empty.changelist.show_confirmation,offer.move.partially.committed.disabled,commit.before.check.code.cleanup.disabled,commit.before.check.non.empty.comment.disabled,include.text.into.shelf.enabled,commit.clear.initial.comment.disabled,perform.add_remove.in.background.enabled,commit.before.rearrange.disabled,commit.before.optimize.imports.disabled,commit.show.unversioned.enabled,offer.move.failed.committed.do_nothing_silently,changelist.preselect.existing.disabled,perform.checkout.in.background.enabled,commit.before.check.code.smell.enabled,commit.use.right.margin.enabled,perform.rollback.in.background.disabled,commit.before.check.todo.enabled,changelist.make.new.active.disabled" collectionTime="1508076147759" />
     </group>
   </component>
   <component name="UsageTrigger">
     <counts>
       <entry feature="StripeButton[Version_Control].shown" count="1" />
       <entry feature="git.branch.checkout.local" count="4" />
+      <entry feature="git.branch.create.new" count="1" />
+      <entry feature="ide.settings.Code_Style" count="1" />
       <entry feature="ide.settings.Keymap" count="1" />
-      <entry feature="ideaapp.started" count="15" />
-      <entry feature="terminal.linux" count="7" />
+      <entry feature="ide.settings.TypeScript" count="1" />
+      <entry feature="ideaapp.started" count="20" />
+      <entry feature="terminal.linux" count="9" />
       <entry feature="vcs.log.ShowDiff" count="2" />
       <entry feature="welcome.screen.WelcomeScreen.Configure" count="4" />
       <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="6" />
-      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="3" />
       <entry feature="welcome.screen.WelcomeScreen.Settings" count="2" />
       <entry feature="welcome.screen.WelcomeScreen.Update" count="1" />
     </counts>

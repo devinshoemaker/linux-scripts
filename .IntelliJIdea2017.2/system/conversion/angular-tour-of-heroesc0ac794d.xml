@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="build-jar-configurations-to-artifacts" />
+    <converter id="detach-cdi-facet-from-module" />
+    <converter id="detach-jsf-facet-from-module" />
+    <converter id="flex-build-configurations" />
+    <converter id="google-app-engine-facet" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="gwt-packaging" />
+    <converter id="javaee-module-to-facets" />
+    <converter id="javaee-packaging-to-artifacts" />
+    <converter id="js-debug-configuration-converter" />
+    <converter id="js-predefined-libraries-merged" />
+    <converter id="junit-to-android-junit-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/devin/code/angular/angular-tour-of-heroes/.idea/angular-tour-of-heroes.iml" timestamp="1508327138000" />
+    <file path="/home/devin/code/angular/angular-tour-of-heroes/.idea/inspectionProfiles/Project_Default.xml" timestamp="1508327161000" />
+    <file path="/home/devin/code/angular/angular-tour-of-heroes/.idea/modules.xml" timestamp="1508327138000" />
+    <file path="/home/devin/code/angular/angular-tour-of-heroes/.idea/typescript-compiler.xml" timestamp="1508328006000" />
+    <file path="/home/devin/code/angular/angular-tour-of-heroes/.idea/vcs.xml" timestamp="1508327161000" />
+    <file path="/home/devin/code/angular/angular-tour-of-heroes/.idea/workspace.xml" timestamp="1508379205000" />
+  </project-files>
+</conversion>
+
