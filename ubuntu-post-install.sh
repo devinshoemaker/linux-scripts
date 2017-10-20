@@ -28,10 +28,10 @@ sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-i
 ./ubuntu/google-chrome.sh
 
 # Install Arc Theme
-./ubuntu/arc-theme.sh
+#./ubuntu/arc-theme.sh
 
 # Install Paper Theme
-./ubuntu/paper-theme.sh
+#./ubuntu/paper-theme.sh
 
 # Install Development Tools
 ./ubuntu/development-tools.sh
