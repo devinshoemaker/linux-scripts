@@ -10,7 +10,7 @@ sudo apt -y upgrade
 sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt -y install gnome-boxes gparted guake network-manager-openvpn-gnome pulseaudio-equalizer virtualbox xclip
+sudo apt -y install gnome-boxes gparted guake network-manager-openvpn-gnome virtualbox xclip
 
 # Restart Network Service
 sudo /etc/init.d/networking restart
@@ -20,6 +20,9 @@ sudo snap install discord
 
 # Install GNOME Shell Extensions
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
+
+# Install Equalizer
+./ubuntu/equalizer.sh
 
 # Install Google Chrome
 ./ubuntu/google-chrome.sh
@@ -42,11 +45,6 @@ sudo apt -y autoremove
 
 # Install Ionic and Download Source Code
 ./ubuntu/ionic.sh
-
-# Fix Equalizer
-sudo passwd root
-su -c 'echo load-module module-equalizer-sink  >> /etc/pulse/default.pa
-echo load-module module-dbus-protocol >> /etc/pulse/default.pa'
 
 # .bashrc
 ./ubuntu/bashrc-tweaks.sh
