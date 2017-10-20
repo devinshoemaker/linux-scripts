@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Development Tools
+# Ubuntu Development Tools
 
 # Update Repositories
 sudo apt update

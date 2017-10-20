@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Install Ionic and Download Source Code
+# Ubuntu Install Ionic and Download Source Code
 
 # Update Repositories
 sudo apt update
