@@ -44,7 +44,7 @@ sudo apt -y upgrade
 sudo apt -y autoremove
 
 # Install Ionic and Download Source Code
-./ubuntu/ionic.sh
+./ubuntu/angular-ionic.sh
 
 # .bashrc
 ./ubuntu/bashrc-tweaks.sh
