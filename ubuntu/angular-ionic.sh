@@ -12,10 +12,17 @@ sudo apt -y install curl
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt -y install nodejs
 
+# Install Angular
+sudo npm install -g @angular/cli
+
 # Install Ionic and Cordova
 sudo npm install -g ionic cordova
 
-# Download Source Code
+# Download Angular Source Code
+mkdir -p ~/code/angular
+cd ~/code/angular
+
+# Download Ionic Source Code
 mkdir -p ~/code/ionic
 cd ~/code/ionic
 
