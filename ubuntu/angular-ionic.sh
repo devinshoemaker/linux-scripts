@@ -22,6 +22,8 @@ sudo npm install -g ionic cordova
 mkdir -p ~/code/angular
 cd ~/code/angular
 
+git clone https://github.com/Dshoe/angular-tour-of-heroes
+
 # Download Ionic Source Code
 mkdir -p ~/code/ionic
 cd ~/code/ionic
