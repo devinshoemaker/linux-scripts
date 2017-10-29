@@ -22,19 +22,19 @@ sudo snap install discord
 sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
 
 # Install Equalizer
-./ubuntu/equalizer.sh
+./equalizer.sh
 
 # Install Google Chrome
-./ubuntu/google-chrome.sh
+./google-chrome.sh
 
 # Install Arc Theme
-./ubuntu/arc-theme.sh
+./arc-theme.sh
 
 # Install Paper Theme
-./ubuntu/paper-theme.sh
+./paper-theme.sh
 
 # Install Development Tools
-./ubuntu/development-tools.sh
+./development-tools.sh
 
 # Update Packages
 sudo apt update
@@ -44,7 +44,7 @@ sudo apt -y upgrade
 sudo apt -y autoremove
 
 # Install Ionic and Download Source Code
-./ubuntu/angular-ionic.sh
+./angular-ionic.sh
 
 # .bashrc
-./ubuntu/bashrc-tweaks.sh
+./bashrc-tweaks.sh
