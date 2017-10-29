@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu Install Ionic and Download Source Code
+# Ubuntu Install Angular, Ionic, and Download Source Code
 
 # Update Repositories
 sudo apt update

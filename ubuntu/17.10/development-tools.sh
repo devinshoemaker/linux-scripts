@@ -34,5 +34,5 @@ umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --a
 # Install GitKraken
 ./gitkraken.sh
 
-# Install Angular and Ionic
+# Install Angular, Ionic, and Download Source Code
 ./angular-ionic.sh

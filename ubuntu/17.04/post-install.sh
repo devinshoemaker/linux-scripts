@@ -45,6 +45,3 @@ sudo apt -y upgrade
 
 # Remove Packages No Longer Required
 sudo apt -y autoremove
-
-# Install Ionic and Download Source Code
-./angular-ionic.sh
