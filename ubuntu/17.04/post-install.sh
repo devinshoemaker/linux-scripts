@@ -15,6 +15,9 @@ sudo ubuntu-drivers autoinstall
 # Install User Applications
 sudo apt -y install gnome-boxes gparted guake network-manager-openvpn-gnome virtualbox xclip
 
+# Autostart Applications
+cp -r ../../autostart/ ~/.config/
+
 # Restart Network Service
 sudo /etc/init.d/networking restart
 

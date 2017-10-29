@@ -16,6 +16,9 @@ sudo apt -y upgrade
 # Install User Applications
 sudo apt -y install exfat-fuse gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
 
+# Autostart Applications
+cp -r ../../autostart/ ~/.config/
+
 # Restart Network Service
 sudo /etc/init.d/networking restart
 
