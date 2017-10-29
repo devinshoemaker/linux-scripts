@@ -1,8 +1,9 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Install Arc Theme
+# Ubuntu Install Arc Theme
 
-# Add Repository
+# Add Repositories
+sudo add-apt-repository ppa:noobslab/themes
 sudo add-apt-repository -y ppa:noobslab/icons
 
 # Update Repositories

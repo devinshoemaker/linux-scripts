@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Install GitKraken
+# Ubuntu 17.10 Install GitKraken
 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i gitkraken-amd64.deb

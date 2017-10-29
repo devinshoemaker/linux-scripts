@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Install Ionic and Download Source Code
+# Ubuntu 17.10 Install Ionic and Download Source Code
 
 # Update Repositories
 sudo apt update
@@ -10,12 +10,21 @@ sudo apt -y install curl
 
 # Install Modern Node.js
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
-sudo apt -y install nodejs
+sudo apt -y install nodejs npm
+
+# Install Angular
+sudo npm install -g @angular/cli
 
 # Install Ionic and Cordova
 sudo npm install -g ionic cordova
 
-# Download Source Code
+# Download Angular Source Code
+mkdir -p ~/code/angular
+cd ~/code/angular
+
+git clone https://github.com/Dshoe/angular-tour-of-heroes
+
+# Download Ionic Source Code
 mkdir -p ~/code/ionic
 cd ~/code/ionic
 
@@ -23,6 +32,6 @@ git clone https://github.com/dshoe/taskit-ionic.git
 sudo npm install -g add-cors-to-couchdb
 sudo systemctl start couchdb
 add-cors-to-couchdb
-sudo systecmctl stop couchdb
+sudo systemctl stop couchdb
 
 git clone https://github.com/dshoe/coinbase-profit.git

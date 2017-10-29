@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Development Tools
+# Ubuntu Development Tools
 
 # Update Repositories
 sudo apt update
@@ -32,4 +32,4 @@ umake ide atom $HOME/.local/share/umake/ide/atom
 umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
 
 # Install GitKraken
-./ubuntu/gitkraken.sh
+./gitkraken.sh

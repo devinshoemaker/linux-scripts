@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Ubuntu Install PulseAudio Equalizer
+
+# Add Repository
+sudo add-apt-repository ppa:nilarimogard/webupd8
+
+# Update Repositories
+sudo apt update
+
+# Install Package
+sudo apt -y install pulseaudio-equalizer
+
+# Fix Equalizer
+sudo passwd root
+su -c 'echo load-module module-equalizer-sink  >> /etc/pulse/default.pa
+echo load-module module-dbus-protocol >> /etc/pulse/default.pa'
