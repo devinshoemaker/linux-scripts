@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.04 Post Install Script
+# Ubuntu GNOME 17.04 Post Install Script
 
 # Update Packages
 sudo apt update
