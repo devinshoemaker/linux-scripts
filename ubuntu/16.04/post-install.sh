@@ -6,6 +6,9 @@
 sudo apt update
 sudo apt -y upgrade
 
+# .bashrc
+./bashrc-tweaks.sh
+
 # Install NVIDIA Driver
 sudo ubuntu-drivers autoinstall
 
@@ -45,6 +48,3 @@ sudo apt -y autoremove
 
 # Install Ionic and Download Source Code
 ./angular-ionic.sh
-
-# .bashrc
-./bashrc-tweaks.sh

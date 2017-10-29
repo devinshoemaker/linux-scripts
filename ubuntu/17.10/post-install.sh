@@ -6,6 +6,9 @@
 sudo apt update
 sudo apt -y upgrade
 
+# .bashrc
+./bashrc-tweaks.sh
+
 # Install NVIDIA Driver
 #sudo ubuntu-drivers autoinstall
 
@@ -42,9 +45,6 @@ sudo apt -y upgrade
 
 # Remove Packages No Longer Required
 sudo apt -y autoremove
-
-# .bashrc
-./bashrc-tweaks.sh
 
 # Change GDM Theme
 sudo update-alternatives --config gdm3.css
