@@ -10,6 +10,7 @@ sudo apt -y upgrade
 ./bashrc-tweaks.sh
 
 # Install NVIDIA Driver
+# Default free driver runs well.
 #sudo ubuntu-drivers autoinstall
 
 # Install User Applications
@@ -34,6 +35,7 @@ sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-i
 ./arc-theme.sh
 
 # Install Paper Theme
+# 17.10 package not available.
 #./paper-theme.sh
 
 # Install Development Tools
