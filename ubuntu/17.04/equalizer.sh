@@ -6,7 +6,7 @@
 sudo apt update
 
 # Install Package
-sudo apt -y install pulseaudio-equalizer
+sudo apt install-y  pulseaudio-equalizer
 
 # Fix Equalizer
 sudo passwd root

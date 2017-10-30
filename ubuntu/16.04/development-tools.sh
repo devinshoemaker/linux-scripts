@@ -6,7 +6,7 @@
 sudo apt update
 
 # Install Packages
-sudo apt -y install couchdb docker.io
+sudo apt install -y couchdb docker.io
 sudo systemctl stop couchdb
 sudo systemctl disable couchdb
 
@@ -16,7 +16,7 @@ sudo usermod -aG docker $(whoami)
 # Install Ubuntu Make from PPA
 sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
 sudo apt update
-sudo apt -y install ubuntu-make
+sudo apt install -y ubuntu-make
 
 # Install IntelliJ Ultimate
 umake ide idea-ultimate $HOME/.local/share/umake/ide/idea-ultimate

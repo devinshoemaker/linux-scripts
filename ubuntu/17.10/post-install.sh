@@ -4,7 +4,7 @@
 
 # Update Packages
 sudo apt update
-sudo apt -y upgrade
+sudo apt upgrade -y
 
 # .bashrc
 ./bashrc-tweaks.sh
@@ -14,7 +14,7 @@ sudo apt -y upgrade
 #sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt -y install exfat-fuse gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
+sudo apt install -y exfat-fuse gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
 
 # Autostart Applications
 cp -r ../../autostart/ ~/.config/
@@ -26,7 +26,7 @@ sudo /etc/init.d/networking restart
 sudo snap install discord
 
 # Install GNOME Shell Extensions
-sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
+sudo apt install -y gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
 
 # Install Equalizer
 ./equalizer.sh
@@ -44,12 +44,8 @@ sudo apt -y install gnome-shell-extension-dashtodock gnome-shell-extension-top-i
 # Install Development Tools
 ./development-tools.sh
 
-# Update Packages
-sudo apt update
-sudo apt -y upgrade
-
 # Remove Packages No Longer Required
-sudo apt -y autoremove
+sudo apt autoremove -y
 
 # Change GDM Theme
 sudo update-alternatives --config gdm3.css
