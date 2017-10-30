@@ -6,12 +6,12 @@
 sudo apt update
 
 # Install Packages
-sudo apt install -y couchdb docker.io
+sudo apt install -y couchdb
 sudo systemctl stop couchdb
 sudo systemctl disable couchdb
 
-# Add User to Docker Group
-sudo usermod -aG docker $(whoami)
+# Install Docker
+./docker.sh
 
 # Install Ubuntu Make from PPA
 sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
