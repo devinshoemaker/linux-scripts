@@ -10,7 +10,7 @@ sudo apt install -y curl
 
 # Install Modern Node.js
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
-sudo apt install -y nodejs npm
+sudo apt install -y nodejs
 
 # Install Angular
 sudo npm install -g @angular/cli
