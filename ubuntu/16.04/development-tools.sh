@@ -15,7 +15,7 @@ umake ide atom $HOME/.local/share/umake/ide/atom
 
 # Install IntelliJ Ultimate
 umake ide idea-ultimate $HOME/.local/share/umake/ide/idea-ultimate
-cp -r .IntelliJIdea* ~/
+cp -r ../../.IntelliJIdea* ~/
 
 # Install Android Studio
 umake android $HOME/.local/share/umake/android/android-studio --accept-license
