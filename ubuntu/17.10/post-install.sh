@@ -26,7 +26,7 @@ sudo /etc/init.d/networking restart
 sudo snap install discord
 
 # Install GNOME Shell Extensions
-sudo apt install -y gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
+sudo apt install -y gnome-shell-extensions gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
 
 # Install Equalizer
 ./equalizer.sh
