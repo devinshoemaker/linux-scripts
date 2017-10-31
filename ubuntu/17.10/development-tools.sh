@@ -12,6 +12,7 @@ sudo apt update
 sudo apt install -y ubuntu-make
 
 # Install Atom
+sudo apt install -y gconf2
 umake ide atom $HOME/.local/share/umake/ide/atom
 
 # Install IntelliJ Ultimate
