@@ -10,8 +10,7 @@ sudo apt upgrade -y
 ./bashrc-tweaks.sh
 
 # Install NVIDIA Driver
-# Default free driver runs well.
-#sudo ubuntu-drivers autoinstall
+sudo ubuntu-drivers autoinstall
 
 # Install User Applications
 sudo apt install -y exfat-fuse gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
