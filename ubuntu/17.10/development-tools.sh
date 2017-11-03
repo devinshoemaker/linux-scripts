@@ -29,6 +29,8 @@ cp -r ../../.IntelliJIdea* ~/
 ./gitkraken.sh
 
 # Install Packages
+sudo add-apt-repository ppa:jderose/couchdb-1.7.0
+sudo apt update
 sudo apt install -y couchdb
 sudo systemctl stop couchdb
 sudo systemctl disable couchdb
