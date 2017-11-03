@@ -16,7 +16,7 @@ sudo ubuntu-drivers autoinstall
 sudo apt install -y exfat-fuse gnome-boxes gnome-session gparted guake network-manager-openvpn-gnome virtualbox xclip
 
 # Autostart Applications
-# cp -r ../../autostart/ ~/.config/
+cp -r ../../autostart/ ~/.config/
 
 # Restart Network Service
 sudo /etc/init.d/networking restart
