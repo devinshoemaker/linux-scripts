@@ -27,7 +27,7 @@ cp -r ../../.IntelliJIdea* ~/
 #umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
 
 # Install GitKraken
-./gitkraken.sh
+./../common/gitkraken.sh
 
 # Install Packages
 sudo add-apt-repository ppa:jderose/couchdb-1.7.0
