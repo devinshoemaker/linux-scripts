@@ -37,7 +37,7 @@ sudo systemctl stop couchdb
 sudo systemctl disable couchdb
 
 # Install Docker
-./docker.sh
+./../common/docker.sh
 
 # Install Angular, Ionic, and Download Source Code
-./angular-ionic.sh
+./../common/angular-ionic.sh

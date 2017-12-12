@@ -2,6 +2,12 @@
 
 # Ubuntu Install GitKraken
 
+# Update Repositories
+sudo apt update
+
+# Install Required Dependencies
+sudo apt install -y gconf2 python
+
 # Download Package
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 
