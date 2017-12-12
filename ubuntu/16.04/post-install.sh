@@ -22,7 +22,7 @@ sudo apt install -y gnome-boxes gparted guake virtualbox xclip
 ./../common/google-chrome.sh
 
 # Install Snap Packages
-sudo snap install discord
+#sudo snap install discord
 
 # Autostart Applications
 cp -r ../../autostart/ ~/.config/
