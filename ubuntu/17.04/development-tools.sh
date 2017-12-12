@@ -28,8 +28,6 @@ umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
 # Install Packages
 sudo apt install -y couchdb
-sudo systemctl stop couchdb
-sudo systemctl disable couchdb
 
 # Install Docker
 ./../common/docker.sh

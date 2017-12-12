@@ -33,8 +33,6 @@ cp -r ../../.IntelliJIdea* ~/
 sudo add-apt-repository -y ppa:jderose/couchdb-1.7.0
 sudo apt update
 sudo apt install -y couchdb
-sudo systemctl stop couchdb
-sudo systemctl disable couchdb
 
 # Install Docker
 ./../common/docker.sh
