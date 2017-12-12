@@ -24,7 +24,7 @@ cp -r ../../.IntelliJIdea* ~/
 #umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
 # Install Visual Studio Code
-#umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
+umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
 
 # Install GitKraken
 ./../common/gitkraken.sh
