@@ -24,7 +24,7 @@ umake android $HOME/.local/share/umake/android/android-studio --accept-license
 #umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license
 
 # Install GitKraken
-./gitkraken.sh
+./../common/gitkraken.sh
 
 # Install Packages
 sudo apt install -y couchdb
@@ -32,7 +32,7 @@ sudo systemctl stop couchdb
 sudo systemctl disable couchdb
 
 # Install Docker
-./docker.sh
+./../common/docker.sh
 
 # Install Angular, Ionic, and Download Source Code
-./angular-ionic.sh
+./../common/angular-ionic.sh
