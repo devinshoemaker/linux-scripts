@@ -17,5 +17,8 @@ sudo /etc/init.d/networking restart
 # Install GNOME Shell Extensions
 sudo apt install -y gnome-shell-extensions gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
 
+# Install Arc Theme
+sudo apt install -y arc-theme
+
 # Change GDM Theme
 sudo update-alternatives --config gdm3.css
