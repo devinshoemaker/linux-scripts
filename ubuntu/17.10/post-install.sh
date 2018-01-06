@@ -10,7 +10,7 @@ sudo apt upgrade -y
 ./gnome-tweaks.sh
 
 # .bashrc
-./bashrc-tweaks.sh
+./../common/bashrc-tweaks.sh
 
 # Install NVIDIA Driver
 sudo ubuntu-drivers autoinstall
