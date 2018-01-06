@@ -18,10 +18,12 @@ sudo apt update
 ./../common/angular-ionic.sh
 
 # Install Ubuntu Make from PPA
-# This PPA is not available on 17.10 yet.
-# sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
-# sudo apt update
-# sudo apt install -y ubuntu-make
+sudo add-apt-repository -y ppa:lyzardking/ubuntu-make
+sudo apt update
+sudo apt install -y ubuntu-make
+
+# Install Android Studio
+umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
 # Install Atom
 # sudo apt install -y gconf2
@@ -30,10 +32,6 @@ sudo apt update
 # Install IntelliJ Ultimate
 # umake ide idea-ultimate $HOME/.local/share/umake/ide/idea-ultimate
 # cp -r ../../.IntelliJIdea* ~/
-
-# Install Android Studio
-# This does not install with the current version of umake.
-# umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
 # Install Visual Studio Code
 # umake ide visual-studio-code $HOME/.local/share/umake/ide/visual-studio-code --accept-license

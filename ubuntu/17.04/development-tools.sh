@@ -18,12 +18,13 @@ sudo apt update
 ./../common/angular-ionic.sh
 
 # Install Ubuntu Make from PPA
-sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
-sudo apt update
-sudo apt install -y ubuntu-make
+# sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
+# sudo apt update
+# sudo apt install -y ubuntu-make
+sudo snap install ubuntu-make --classic
 
 # Install Android Studio
-umake android $HOME/.local/share/umake/android/android-studio --accept-license
+ubuntu-make.umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
 # Install Atom
 # umake ide atom $HOME/.local/share/umake/ide/atom
