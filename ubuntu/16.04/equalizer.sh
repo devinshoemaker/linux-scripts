@@ -3,7 +3,7 @@
 # Ubuntu Install PulseAudio Equalizer
 
 # Add Repository
-sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
 
 # Update Repositories
 sudo apt update
