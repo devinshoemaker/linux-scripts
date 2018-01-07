@@ -1,0 +1,54 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="Git">
+      <project id="coinbase-profit" values="data.remotes.in.project.1,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled,data.remote.branches.count.2+,config.ssh.enabled,config.force.push.enabled,config.push.autoupdate.disabled,config.push.update.all.roots.enabled,data.local.branches.count.2+,config.warn.about.detached.enabled,config.save.policy.STASH,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED" collectionTime="1502927102871" />
+    </group>
+    <group name="vcs">
+      <project id="coinbase-profit" values="Git" collectionTime="1502927102863" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="coinbase-profit" values="ECMAScript 5.1" collectionTime="1502927102960" />
+    </group>
+    <group name="module-language-level">
+      <project id="coinbase-profit" values="JDK_1_9" collectionTime="1502927102871" />
+    </group>
+    <group name="vcs-options">
+      <project id="coinbase-profit" values="perform.checkout.in.background.enabled,commit.before.check.code.cleanup.disabled,perform.update.in.background.enabled,check.conflicts.in.background.disabled,perform.commit.in.background.enabled,commit.before.rearrange.disabled,show.changes.preview.disabled,commit.clear.initial.comment.disabled,commit.before.check.code.smell.disabled,commit.before.reformat.project.disabled,offer.move.failed.committed.do_nothing_silently,include.text.into.shelf.enabled,changelist.make.new.active.disabled,commit.use.right.margin.enabled,changelist.preselect.existing.disabled,commit.before.optimize.imports.disabled,perform.rollback.in.background.disabled,offer.remove.empty.changelist.show_confirmation,commit.before.check.non.empty.comment.disabled,commit.show.unversioned.enabled,offer.move.partially.committed.disabled,perform.edit.in.background.enabled,perform.add_remove.in.background.enabled,commit.before.check.files.up.to.date.disabled,commit.before.check.todo.enabled,commit.before.reformat.file.disabled" collectionTime="1502927102864" />
+    </group>
+    <group name="images.ide.background">
+      <project id="coinbase-profit" values="frame 0,editor 0" collectionTime="1502927102869" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="coinbase-profit" values="data.git.root.count.1,data.commit.count.1+,data.branches.count.1+,data.users.count.1+" collectionTime="1502927102869" />
+    </group>
+    <group name="file-type">
+      <project id="coinbase-profit" values="JSCS,TypeScript,CSS,JSON,XML,C++,Properties,Markdown,CLASS,DTD,C#,JAVA,Eclipse,JavaScript,UNKNOWN,SourceMap,SCSS,PLAIN_TEXT,Groovy,TSLint,HTML,YAML,Images,JSHint" collectionTime="1502927102867" />
+    </group>
+    <group name="VCS Log Ui Settings">
+      <project id="coinbase-profit" values="ui.sort.bek.disabled,ui.highlighter.MY_COMMITS.enabled,ui.labels.showTagNames.disabled,ui.textFilter.matchCase.disabled,ui.textFilter.regex.disabled,ui.long.edges.disabled,ui.sort.linear.bek.disabled,ui.details.enabled,ui.highlighter.CURRENT_BRANCH.enabled,ui.labels.compact.enabled,ui.highlighter.MERGE_COMMITS.enabled,ui.sort.normal.enabled" collectionTime="1502927102869" />
+    </group>
+    <group name="module type">
+      <project id="coinbase-profit" values="JAVA_MODULE" collectionTime="1502927102864" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="coinbase-profit" values="Project,Directory" collectionTime="1502927102960" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="StripeButton[Version_Control].shown" count="1" />
+      <entry feature="git.branch.checkout.local" count="4" />
+      <entry feature="ide.settings.Code Style" count="1" />
+      <entry feature="ide.settings.Keymap" count="1" />
+      <entry feature="ide.settings.TypeScript" count="1" />
+      <entry feature="ideaapp.started" count="17" />
+      <entry feature="terminal.linux" count="7" />
+      <entry feature="vcs.log.ShowDiff" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="4" />
+      <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="6" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.Settings" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.Update" count="1" />
+    </counts>
+  </component>
+</application>

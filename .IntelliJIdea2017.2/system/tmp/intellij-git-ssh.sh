@@ -1,2 +1,0 @@
-#!/bin/sh
-"/home/devin/.local/share/umake/ide/idea-ultimate/jre64/bin/java" -cp "/home/devin/.local/share/umake/ide/idea-ultimate/plugins/git4idea/lib/git4idea-rt.jar:/home/devin/.local/share/umake/ide/idea-ultimate/lib/xmlrpc-2.0.jar:/home/devin/.local/share/umake/ide/idea-ultimate/lib/commons-codec-1.9.jar:/home/devin/.local/share/umake/ide/idea-ultimate/lib/util.jar:/home/devin/.local/share/umake/ide/idea-ultimate/lib/trilead-ssh2.jar" org.jetbrains.git4idea.ssh.SSHMain "$@"
