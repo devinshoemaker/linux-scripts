@@ -15,7 +15,7 @@ sudo apt install -y network-manager-openvpn-gnome
 sudo /etc/init.d/networking restart
 
 # Install GNOME Shell Extensions
-sudo apt install -y gnome-shell-extensions gnome-shell-extension-dashtodock gnome-shell-extension-top-icons-plus
+sudo apt install -y gnome-shell-extensions gnome-shell-extension-top-icons-plus
 
 # Install Arc Theme
 sudo apt install -y arc-theme
