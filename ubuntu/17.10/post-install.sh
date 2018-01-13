@@ -21,6 +21,9 @@ sudo apt install -y exfat-fuse gnome-boxes gparted guake virtualbox xclip
 # Install Google Chrome
 ./../common/google-chrome.sh
 
+# Install Etcher
+./../common/etcher.sh
+
 # Install Snap Packages
 #sudo snap install discord
 
