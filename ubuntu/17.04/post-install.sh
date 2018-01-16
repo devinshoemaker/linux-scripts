@@ -16,7 +16,7 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt install -y gnome-boxes gparted guake virtualbox xclip
+sudo apt install -y gimp gnome-boxes gparted guake virtualbox xclip
 
 # Install Google Chrome
 ./../common/google-chrome.sh
