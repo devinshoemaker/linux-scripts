@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu Snap Applications
+# Development Oriented Snap Applications
 
 # IntelliJ IDEA Ultimate
 sudo snap install intellij-idea-ultimate --classic

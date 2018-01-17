@@ -18,6 +18,9 @@ sudo ubuntu-drivers autoinstall
 # Install User Applications
 sudo apt install -y gimp gnome-boxes gparted guake virtualbox xclip
 
+# Install User Oriented Snaps
+./../common/user-snaps.sh
+
 # Install Google Chrome
 ./../common/google-chrome.sh
 
