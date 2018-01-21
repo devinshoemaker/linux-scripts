@@ -24,6 +24,9 @@ sudo apt install -y ubuntu-make
 
 # Install Android Studio
 umake android $HOME/.local/share/umake/android/android-studio --accept-license
+echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc
+echo 'export PATH=$PATH:~/Android/Sdk/platform-tools' >> ~/.bashrc
+sudo apt install -y gradle
 
 # Install Atom
 # sudo apt install -y gconf2
