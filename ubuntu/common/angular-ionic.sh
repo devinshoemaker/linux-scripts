@@ -16,7 +16,7 @@ sudo apt install -y nodejs
 sudo npm install -g @angular/cli
 
 # Install Ionic
-sudo npm install -g ionic@latest
+sudo npm install -g ionic cordova
 
 # Download Angular Source Code
 mkdir -p ~/code/angular
