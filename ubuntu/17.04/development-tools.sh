@@ -6,7 +6,7 @@
 sudo apt update
 
 # Install Snap Packages
-./../common/snaps.sh
+./../common/development-snaps.sh
 
 # Install GitKraken
 ./../common/gitkraken.sh
