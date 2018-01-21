@@ -16,7 +16,7 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall
 
 # Install User Applications
-sudo apt install -y exfat-fuse gnome-boxes gparted guake virtualbox xclip
+sudo apt install -y exfat-fuse gimp gnome-boxes gparted guake virtualbox xclip
 
 # Install User Oriented Snaps
 ./../common/user-snaps.sh
