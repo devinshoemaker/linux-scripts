@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install -y curl
 
 # Install Modern Node.js
-curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 sudo apt install -y nodejs
 
 # Instal NPM Check Updates
