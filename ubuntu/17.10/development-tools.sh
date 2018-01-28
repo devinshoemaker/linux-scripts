@@ -14,6 +14,9 @@ sudo apt update
 # Install Docker
 ./../common/docker.sh
 
+# Install Node.js
+./../common/nodejs.sh
+
 # Install Angular, Ionic, and Download Source Code
 ./../common/angular-ionic.sh
 
