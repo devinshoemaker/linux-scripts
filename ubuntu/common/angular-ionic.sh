@@ -2,9 +2,6 @@
 
 # Ubuntu Install Angular, Ionic, and Download Source Code
 
-# Update Repositories
-sudo apt update
-
 # Install Angular
 sudo npm install -g @angular/cli
 
