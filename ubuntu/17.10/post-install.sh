@@ -27,9 +27,6 @@ sudo apt install -y exfat-fuse gimp gnome-boxes gparted guake virtualbox xclip
 # Install Etcher
 ./../common/etcher.sh
 
-# Install Snap Packages
-#sudo snap install discord
-
 # Autostart Applications
 cp -r ../../autostart/ ~/.config/
 
