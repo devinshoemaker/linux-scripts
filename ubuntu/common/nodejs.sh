@@ -5,12 +5,16 @@
 # Update Repositories
 sudo apt update
 
-# Install curl
-sudo apt install -y curl
+# Install Node.js Version Manager
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
-# Install Modern Node.js
-curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
-sudo apt install -y nodejs
+# Allow NVM to be Used Without Restarting Bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Install Latest Node.js
+nvm install node
 
 # Instal NPM Check Updates
 sudo npm install -g npm-check-updates
