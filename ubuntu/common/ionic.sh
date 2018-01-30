@@ -1,18 +1,10 @@
 #!/bin/sh
 
-# Ubuntu Install Angular, Ionic, and Download Source Code
-
-# Install Angular
-npm install -g @angular/cli
+# Ubuntu -Install Ionic and Download Source Code
+# Node.js Required
 
 # Install Ionic
 npm install -g ionic cordova
-
-# Download Angular Source Code
-mkdir -p ~/code/angular
-cd ~/code/angular
-
-git clone https://github.com/Dshoe/angular-tour-of-heroes
 
 # Add CORS to CouchDB
 npm install -g add-cors-to-couchdb

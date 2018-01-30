@@ -17,8 +17,11 @@ sudo apt update
 # Install Node.js
 ./../common/nodejs.sh
 
-# Install Angular, Ionic, and Download Source Code
-./../common/angular-ionic.sh
+# Install Angular and Download Source Code
+./../common/angular.sh
+
+# Install Ionic and Download Source Code
+./../common/ionic.sh
 
 # Install Ubuntu Make from PPA
 sudo add-apt-repository -y ppa:lyzardking/ubuntu-make
