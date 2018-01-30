@@ -14,4 +14,4 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 
 # Instal NPM Check Updates
-sudo npm install -g npm-check-updates
+npm install -g npm-check-updates
