@@ -2,9 +2,6 @@
 
 # Ubuntu - Install Node.js
 
-# Update Repositories
-sudo apt update
-
 # Install Node.js Version Manager
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
