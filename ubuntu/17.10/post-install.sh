@@ -36,5 +36,8 @@ cp -r ../../autostart/ ~/.config/
 # Install Development Tools
 ./development-tools.sh
 
+# GRUB Tweaks
+./../common/grub-tweaks.sh
+
 # Remove Packages No Longer Required
 sudo apt autoremove -y
