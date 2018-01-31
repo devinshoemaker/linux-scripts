@@ -6,6 +6,9 @@
 sudo apt update
 sudo apt upgrade -y
 
+# Set root password
+sudo passwd root
+
 # Disable Universal Time Clock
 # fixes time difference in Windows
 timedatectl set-local-rtc 1 --adjust-system-clock
