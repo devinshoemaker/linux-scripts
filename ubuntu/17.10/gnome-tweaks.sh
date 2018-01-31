@@ -25,3 +25,6 @@ sudo apt install -y numix-icon-theme
 
 # Change GDM Theme
 sudo update-alternatives --config gdm3.css
+
+# Boot GDM With Wayland
+su -c 'echo "WaylandEnable=false" >> /etc/gdm3/custom.conf'
