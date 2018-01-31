@@ -6,6 +6,10 @@
 sudo apt update
 sudo apt upgrade -y
 
+# Disable Universal Time Clock
+# fixes time difference in Windows
+timedatectl set-local-rtc 1 --adjust-system-clock
+
 # GNOME Shell Tweaks
 ./gnome-tweaks.sh
 
