@@ -12,5 +12,5 @@ echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc
 # Export Android Platform Tools to PATH
 # echo 'export PATH=$PATH:~/Android/Sdk/platform-tools' >> ~/.bashrc
 
-# Install Gradle
-sudo apt install -y gradle
+# Install ADB and Gradle
+sudo apt install -y adb gradle
