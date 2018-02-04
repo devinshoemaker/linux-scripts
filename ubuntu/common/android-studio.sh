@@ -10,7 +10,7 @@ umake android $HOME/.local/share/umake/android/android-studio --accept-license
 echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc
 
 # Export Android Platform Tools to PATH
-echo 'export PATH=$PATH:~/Android/Sdk/platform-tools' >> ~/.bashrc
+# echo 'export PATH=$PATH:~/Android/Sdk/platform-tools' >> ~/.bashrc
 
 # Install Gradle
 sudo apt install -y gradle
