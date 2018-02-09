@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.10 Post Install Script
+# Ubuntu 17.10 - Bootstrap
 
 # Update Packages
 sudo apt update
