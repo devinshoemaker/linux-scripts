@@ -15,7 +15,7 @@ sudo apt update
 ./../common/docker.sh
 
 # Install Node.js
-./../common/nodejs.sh
+./../../common/nodejs.sh
 
 # Install Angular and Download Source Code
 ./../common/angular.sh
