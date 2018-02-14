@@ -117,3 +117,19 @@ fi
 
 # Remove Packages No Longer Required
 sudo apt autoremove -y
+
+# Settings to change
+
+## Theme: Breeze dark
+
+## Panel: Icon-only task manager
+
+## Applications: Application menu 
+
+## Shortcuts
+### Maximize
+### Tile left/right
+### Present windows
+
+## Compositor
+### Tearing prevention: Full screen repairs
