@@ -53,7 +53,7 @@ fi
 echo '==> Install basic packages? (Y/n)'
 read BASIC_PACKAGES
 if [ "$BASIC_PACKAGES" = 'y' ] || [ "$BASIC_PACKAGES" = 'yes' ] || [ "$BASIC_PACKAGES" = '' ]; then
-    sudo apt install -y exfat-fuse gimp gnome-boxes gparted guake nemo virtualbox xclip
+    sudo apt install -y exfat-fuse gimp gnome-boxes gparted guake kcalc nemo virtualbox xclip
 else
     echo '==> Skipping basic packages.'
 fi
