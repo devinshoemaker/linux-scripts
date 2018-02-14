@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# Ubuntu 17.10 Development Tools
+# Ubuntu - Development Tools
 
 # Update Repositories
 sudo apt update
 
 # Install Snap Packages
-./../common/development-snaps.sh
+./../../common/development-snaps.sh
 
 # Install GitKraken
 ./../common/gitkraken.sh
@@ -17,11 +17,17 @@ sudo apt update
 # Install Node.js
 ./../../common/nodejs.sh
 
-# Install Angular and Download Source Code
-./../common/angular.sh
+# Install Angular
+./../../common/angular.sh
 
-# Install Ionic and Download Source Code
-./../common/ionic.sh
+# Clone Angular Projects
+./../../common/angular-projects.sh
+
+# Install Ionic
+./../../common/ionic.sh
+
+# Clone Ionic Projects
+./../../common/ionic-projects.sh
 
 # Install Ubuntu Make
 ./../common/ubuntu-make.sh

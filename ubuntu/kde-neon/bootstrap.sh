@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Ubuntu 17.10 - Bootstrap
+# KDE Neon - Bootstrap
 
 # Update Packages
 echo '==> Update packages? (Y/n)'
@@ -29,15 +29,6 @@ if [ "$DISABLE_UTC" = 'y' ] || [ "$DISABLE_UTC" = 'yes' ] || [ "$DISABLE_UTC" = 
     timedatectl set-local-rtc 1 --adjust-system-clock
 else
     echo '==> Skip disabling UTC.'
-fi
-
-# GNOME Shell Tweaks
-echo '==> Install GNOME tweaks, themes, and extensions? (Y/n)'
-read GNOME_TWEAKS
-if [ "$GNOME_TWEAKS" = 'y' ] || [ "$GNOME_TWEAKS" = 'yes' ] || [ "$GNOME_TWEAKS" = '' ]; then
-    ./gnome-tweaks.sh
-else
-    echo '==> Skipping GNOME tweaks.'
 fi
 
 # .bashrc
@@ -101,7 +92,7 @@ cp -r ../../autostart/ ~/.config/
 echo '==> Install PulseAudio Equalizer? (Y/n)'
 read PULSEAUDIO_EQUALIZER
 if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
-    ./../common/equalizer.sh
+    ./../16.04/equalizer.sh
 else
     echo '==> Skipping PulseAudio Equalizer.'
 fi
@@ -110,7 +101,7 @@ fi
 echo '==> Install development tools? (Y/n)'
 read DEVELOPMENT_TOOLS
 if [ "$DEVELOPMENT_TOOLS" = 'y' ] || [ "$DEVELOPMENT_TOOLS" = 'yes' ] || [ "$DEVELOPMENT_TOOLS" = '' ]; then
-    ./../common/development-tools.sh
+    ./development-tools.sh
 else
     echo '==> Skipping development tools.'
 fi
