@@ -71,7 +71,7 @@ fi
 echo '==> Install user Snap packages? (Y/n)'
 read USER_SNAPS
 if [ "$USER_SNAPS" = 'y' ] || [ "$USER_SNAPS" = 'yes' ] || [ "$USER_SNAPS" = '' ]; then
-    ./../common/user-snaps.sh
+    ./../../common/user-snaps.sh
 else
     echo '==> Skipping user Snap packages.'
 fi
