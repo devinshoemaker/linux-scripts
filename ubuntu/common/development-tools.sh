@@ -6,31 +6,91 @@
 sudo apt update
 
 # Install Snap Packages
-./../../common/development-snaps.sh
+echo '==> Install development Snap packages? (Y/n)'
+read SNAP_PACKAGES
+if [ "$SNAP_PACKAGES" = 'y' ] || [ "$SNAP_PACKAGES" = 'yes' ] || [ "$SNAP_PACKAGES" = '' ]; then
+    ./../../common/development-snaps.sh
+else
+    echo '==> Skipping development Snap packages.'
+fi
 
 # Install GitKraken
-./../common/gitkraken.sh
+echo '==> Install GitKraken? (Y/n)'
+read GITKRAKEN
+if [ "$GITKRAKEN" = 'y' ] || [ "$GITKRAKEN" = 'yes' ] || [ "$GITKRAKEN" = '' ]; then
+    ./../common/gitkraken.sh
+else
+    echo '==> Skipping GitKraken.'
+fi
 
 # Install Docker
-./../common/docker.sh
+echo '==> Install Docker? (Y/n)'
+read DOCKER
+if [ "$DOCKER" = 'y' ] || [ "$DOCKER" = 'yes' ] || [ "$DOCKER" = '' ]; then
+    ./../common/docker.sh
+else
+    echo '==> Skipping Docker.'
+fi
 
 # Install Node.js
-./../../common/nodejs.sh
+echo '==> Install Node.js? (Y/n)'
+read NODEJS
+if [ "$NODEJS" = 'y' ] || [ "$NODEJS" = 'yes' ] || [ "$NODEJS" = '' ]; then
+    ./../../common/nodejs.sh
+else
+    echo '==> Skipping Node.js.'
+fi
 
 # Install Angular
-./../../common/angular.sh
+echo '==> Install Angular? (Y/n)'
+read ANGULAR
+if [ "$ANGULAR" = 'y' ] || [ "$ANGULAR" = 'yes' ] || [ "$ANGULAR" = '' ]; then
+    ./../../common/angular.sh
+else
+    echo '==> Skipping Angular.'
+fi
 
 # Clone Angular Projects
-./../../common/angular-projects.sh
+echo '==> Clone Angular projects? (Y/n)'
+read ANGULAR_PROJECTS
+if [ "$ANGULAR_PROJECTS" = 'y' ] || [ "$ANGULAR_PROJECTS" = 'yes' ] || [ "$ANGULAR_PROJECTS" = '' ]; then
+    ./../../common/angular-projects.sh
+else
+    echo '==> Skipping Angular projects.'
+fi
 
 # Install Ionic
-./../../common/ionic.sh
+echo '==> Install Ionic? (Y/n)'
+read IONIC
+if [ "$IONIC" = 'y' ] || [ "$IONIC" = 'yes' ] || [ "$IONIC" = '' ]; then
+    ./../../common/ionic.sh
+else
+    echo '==> Skipping Ionic.'
+fi
 
 # Clone Ionic Projects
-./../../common/ionic-projects.sh
+echo '==> Clone Ionic projects? (Y/n)'
+read IONIC_PROJECTS
+if [ "$IONIC_PROJECTS" = 'y' ] || [ "$IONIC_PROJECTS" = 'yes' ] || [ "$IONIC_PROJECTS" = '' ]; then
+    ./../../common/ionic-projects.sh
+else
+    echo '==> Skipping Ionic projects.'
+fi
 
 # Install Ubuntu Make
-./../common/ubuntu-make.sh
+echo '==> Install Ubuntu Make? (Y/n)'
+read UBUNTU_MAKE
+if [ "$UBUNTU_MAKE" = 'y' ] || [ "$UBUNTU_MAKE" = 'yes' ] || [ "$UBUNTU_MAKE" = '' ]; then
+    ./../common/ubuntu-make.sh
+else
+    echo '==> Skipping Ubuntu Make.'
+fi
 
 # Install Android Studio
-./../common/android-studio.sh
+echo '==> Install Android Studio? (Y/n)'
+read ANDROID_STUDIO
+if [ "$ANDROID_STUDIO" = 'y' ] || [ "$ANDROID_STUDIO" = 'yes' ] || [ "$ANDROID_STUDIO" = '' ]; then
+    ./../common/android-studio.sh
+else
+    echo '==> Skipping Android Studio.'
+fi
