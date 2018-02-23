@@ -11,7 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Install Latest Node.js
-nvm install --lts=carbon
+nvm install node
 
 # Instal NPM Check Updates
 npm install -g npm-check-updates
