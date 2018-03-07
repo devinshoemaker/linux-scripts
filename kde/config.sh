@@ -16,3 +16,20 @@ kwriteconfig --file ~/.config/powermanagementprofilesrc --group "AC/DimDisplay" 
 kwriteconfig --file ~/.config/powermanagementprofilesrc --group "AC/HandleButtonEvents" --key "powerButtonAction" "1"
 kwriteconfig --file ~/.config/powermanagementprofilesrc --group "AC/SuspendSession" --key "idleTime" "7200000"
 kwriteconfig --file ~/.config/powermanagementprofilesrc --group "AC/SuspendSession" --key "suspendType" "1"
+
+#TODO
+# Window Management
+
+## Task Switcher
+### Visualization - Large Icons
+
+## Window Rules
+### Remember position window rule
+
+# Display and Monitor
+## Compositor
+### Tearing prevention - Full screen repaints
+
+# Input Devices
+## Keyboard
+### NumLock on Plasma Startup - Turn on
