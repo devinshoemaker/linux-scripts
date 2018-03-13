@@ -15,3 +15,21 @@ nvm install node
 
 # Instal NPM Check Updates
 npm install -g npm-check-updates
+
+# Install Angular
+echo '==> Install Angular? (Y/n)'
+read ANGULAR
+if [ "$ANGULAR" = 'y' ] || [ "$ANGULAR" = 'yes' ] || [ "$ANGULAR" = '' ]; then
+    ./angular.sh
+else
+    echo '==> Skipping Angular.'
+fi
+
+# Install Ionic
+echo '==> Install Ionic? (Y/n)'
+read IONIC
+if [ "$IONIC" = 'y' ] || [ "$IONIC" = 'yes' ] || [ "$IONIC" = '' ]; then
+    ./ionic.sh
+else
+    echo '==> Skipping Ionic.'
+fi

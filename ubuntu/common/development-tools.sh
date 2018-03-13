@@ -41,15 +41,6 @@ else
     echo '==> Skipping Node.js.'
 fi
 
-# Install Angular
-echo '==> Install Angular? (Y/n)'
-read ANGULAR
-if [ "$ANGULAR" = 'y' ] || [ "$ANGULAR" = 'yes' ] || [ "$ANGULAR" = '' ]; then
-    ./../../common/angular.sh
-else
-    echo '==> Skipping Angular.'
-fi
-
 # Clone Angular Projects
 echo '==> Clone Angular projects? (Y/n)'
 read ANGULAR_PROJECTS
@@ -57,15 +48,6 @@ if [ "$ANGULAR_PROJECTS" = 'y' ] || [ "$ANGULAR_PROJECTS" = 'yes' ] || [ "$ANGUL
     ./../../common/angular-projects.sh
 else
     echo '==> Skipping Angular projects.'
-fi
-
-# Install Ionic
-echo '==> Install Ionic? (Y/n)'
-read IONIC
-if [ "$IONIC" = 'y' ] || [ "$IONIC" = 'yes' ] || [ "$IONIC" = '' ]; then
-    ./../../common/ionic.sh
-else
-    echo '==> Skipping Ionic.'
 fi
 
 # Clone Ionic Projects
