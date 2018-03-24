@@ -2,11 +2,14 @@
 
 # User Oriented Snap Applications
 
-# Discord
-sudo snap install discord
-
 # Google Play Music Desktop Player
 sudo snap install google-play-music-desktop-player
+
+# Spotify
+sudo snap install spotify
+
+# Discord
+sudo snap install discord
 
 # Slack
 sudo snap install slack --classic
