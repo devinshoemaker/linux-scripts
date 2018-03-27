@@ -5,7 +5,7 @@
 # Set directory environment variable
 DIR=$(cd `dirname $0` && pwd)
 
-# Update Packages
+# Update packages
 echo '==> Update packages? (Y/n)'
 read UPDATE_PACKAGES
 if [ "$UPDATE_PACKAGES" = 'y' ] || [ "$UPDATE_PACKAGES" = 'yes' ] || [ "$UPDATE_PACKAGES" = '' ]; then
@@ -15,7 +15,7 @@ else
     echo '==> Skipping package updates.'
 fi
 
-# .bashrc
+# .bashrc modifications
 echo '==> Install ~/.bashrc modifications? (Y/n)'
 read BASHRC_TWEAKS
 if [ "$BASHRC_TWEAKS" = 'y' ] || [ "$BASHRC_TWEAKS" = 'yes' ] || [ "$BASHRC_TWEAKS" = '' ]; then
@@ -37,7 +37,7 @@ fi
 # Reset directory environment variable
 DIR=$(cd `dirname $0` && pwd)
 
-# Clone Angular Projects
+# Clone Angular projects
 echo '==> Clone Angular projects? (Y/n)'
 read ANGULAR_PROJECTS
 if [ "$ANGULAR_PROJECTS" = 'y' ] || [ "$ANGULAR_PROJECTS" = 'yes' ] || [ "$ANGULAR_PROJECTS" = '' ]; then
@@ -46,7 +46,7 @@ else
     echo '==> Skipping Angular projects.'
 fi
 
-# Clone Ionic Projects
+# Clone Ionic projects
 echo '==> Clone Ionic projects? (Y/n)'
 read IONIC_PROJECTS
 if [ "$IONIC_PROJECTS" = 'y' ] || [ "$IONIC_PROJECTS" = 'yes' ] || [ "$IONIC_PROJECTS" = '' ]; then
@@ -55,5 +55,5 @@ else
     echo '==> Skipping Ionic projects.'
 fi
 
-# Remove Packages No Longer Required
+# Remove packages no longer required
 sudo apt autoremove -y
