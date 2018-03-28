@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install Angular
 # Required - Node.js

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # KDE Neon - Bootstrap
 
@@ -124,7 +124,7 @@ sudo apt autoremove -y
 
 ## Panel: Icon-only task manager
 
-## Applications: Application menu 
+## Applications: Application menu
 
 ## Shortcuts
 ### Maximize
