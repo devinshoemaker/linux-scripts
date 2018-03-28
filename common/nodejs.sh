@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install Node.js
 
-DIR=$(cd `dirname $0` && pwd)
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Node.js Version Manager
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
