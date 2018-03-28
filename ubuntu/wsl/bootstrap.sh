@@ -25,6 +25,17 @@ else
     echo '==> Skipping ~/.bashrc tweaks.'
 fi
 
+# Symlink SSH keys
+echo '==> Symlink SSH keys? (Y/n)'
+read SSH_KEYS
+if [ "$SSH_KEYS" = 'y' ] || [ "$SSH_KEYS" = 'yes' ] || [ "$SSH_KEYS" = '' ]; then
+    mkdir -p ~/.ssh
+    ln -s /mnt/c/Users/Devin\ Shoemaker/.ssh/id_rsa ~/.ssh/id_rsa
+    ln -s /mnt/c/Users/Devin\ Shoemaker/.ssh/id_rsa.pub ~/.ssh/id_rsa.pub
+else
+    echo '==> Skipping SSH key symlink.'
+fi
+
 # Install Node.js
 echo '==> Install Node.js? (Y/n)'
 read NODEJS
