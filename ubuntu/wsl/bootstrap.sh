@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 # Ubuntu 16.04 WSL - Bootstrap
 
 # Set directory environment variable
-DIR=$(cd `dirname $0` && pwd)
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Update packages
 echo '==> Update packages? (Y/n)'
