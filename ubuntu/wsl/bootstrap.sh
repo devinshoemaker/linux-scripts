@@ -20,7 +20,7 @@ echo '==> Install ~/.bashrc modifications? (Y/n)'
 read BASHRC_TWEAKS
 if [ "$BASHRC_TWEAKS" = 'y' ] || [ "$BASHRC_TWEAKS" = 'yes' ] || [ "$BASHRC_TWEAKS" = '' ]; then
     . $DIR/../common/bashrc-tweaks.sh
-    echo 'cd alias code="/mnt/c/Users/Devin\ Shoemaker/code"' >> ~/.bashrc
+    echo 'cd alias code="/mnt/c/code"' >> ~/.bashrc
 else
     echo '==> Skipping ~/.bashrc tweaks.'
 fi
