@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Ubuntu GNOME 16.04 Post Install Script
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Ubuntu - Install Android Studio
 # Ubuntu Make Required

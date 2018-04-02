@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Clone Source Code
 # Required - Node.js CouchDB

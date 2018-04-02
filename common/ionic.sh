@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install Ionic
 # Required - Node.js
