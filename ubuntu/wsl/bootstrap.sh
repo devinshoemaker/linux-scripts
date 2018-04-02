@@ -45,26 +45,5 @@ else
     echo '==> Skipping Node.js.'
 fi
 
-# Reset directory environment variable
-DIR=$(cd `dirname $0` && pwd)
-
-# Clone Angular projects
-echo '==> Clone Angular projects? (Y/n)'
-read ANGULAR_PROJECTS
-if [ "$ANGULAR_PROJECTS" = 'y' ] || [ "$ANGULAR_PROJECTS" = 'yes' ] || [ "$ANGULAR_PROJECTS" = '' ]; then
-    . $DIR/../../common/angular-projects.sh
-else
-    echo '==> Skipping Angular projects.'
-fi
-
-# Clone Ionic projects
-echo '==> Clone Ionic projects? (Y/n)'
-read IONIC_PROJECTS
-if [ "$IONIC_PROJECTS" = 'y' ] || [ "$IONIC_PROJECTS" = 'yes' ] || [ "$IONIC_PROJECTS" = '' ]; then
-    . $DIR/../../common/ionic-projects.sh
-else
-    echo '==> Skipping Ionic projects.'
-fi
-
 # Remove packages no longer required
 sudo apt autoremove -y
