@@ -5,6 +5,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+# Store a local variable of the scripts current directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Update packages
@@ -27,9 +28,9 @@ else
 fi
 
 # GNOME Shell tweaks
-echo '==> Install GNOME tweaks, themes, and extensions? (Y/n)'
+echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read GNOME_TWEAKS
-if [ "$GNOME_TWEAKS" = 'y' ] || [ "$GNOME_TWEAKS" = 'yes' ] || [ "$GNOME_TWEAKS" = '' ]; then
+if [ "$GNOME_TWEAKS" = 'y' ] || [ "$GNOME_TWEAKS" = 'yes' ]; then
     . $DIR/../common/gnome-tweaks.sh
 else
     echo '==> Skipping GNOME tweaks.'
@@ -45,9 +46,9 @@ else
 fi
 
 # Install NVIDIA driver
-echo '==> Install NVIDIA graphics driver? (Y/n)'
+echo '==> Install NVIDIA graphics driver? (y/N)'
 read NVIDIA_DRIVER
-if [ "$NVIDIA_DRIVER" = 'y' ] || [ "$NVIDIA_DRIVER" = 'yes' ] || [ "$NVIDIA_DRIVER" = '' ]; then
+if [ "$NVIDIA_DRIVER" = 'y' ] || [ "$NVIDIA_DRIVER" = 'yes' ]; then
     sudo ubuntu-drivers autoinstall
 else
     echo '==> Skipping NVIDIA driver.'
@@ -58,12 +59,12 @@ echo '==> Install basic packages? (Y/n)'
 read BASIC_PACKAGES
 if [ "$BASIC_PACKAGES" = 'y' ] || [ "$BASIC_PACKAGES" = 'yes' ] || [ "$BASIC_PACKAGES" = '' ]; then
     sudo apt -y install exfat-fuse gimp gparted guake transmission-gtk virtualbox xclip
+
+    # Autostart applications
+    cp -r $DIR/../../autostart/ ~/.config/
 else
     echo '==> Skipping basic packages.'
 fi
-
-# Autostart applications
-cp -r $DIR/../../autostart/ ~/.config/
 
 # Install user oriented Snaps
 echo '==> Install user Snap packages? (Y/n)'
@@ -120,4 +121,4 @@ else
 fi
 
 # Remove Packages No Longer Required
-sudo apt autoremove -y
+sudo apt -y autoremove

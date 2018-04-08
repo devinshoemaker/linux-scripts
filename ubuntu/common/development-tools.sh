@@ -2,6 +2,9 @@
 
 # Ubuntu - Development Tools
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
 # Update Repositories
 sudo apt update
 

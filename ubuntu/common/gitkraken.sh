@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Ubuntu Install GitKraken
+# Ubuntu - Install GitKraken
+
+# Exit immediately if a command exits with a non-zero status
+set -e
 
 # Update Repositories
 sudo apt update
@@ -9,7 +12,7 @@ sudo apt update
 sudo apt install -f
 
 # Install Required Dependencies
-sudo apt install -y gconf2 gvfs-bin libgnome-keyring0 python
+sudo apt -y install gconf2 gvfs-bin libgnome-keyring0 python
 
 # Download Package
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb

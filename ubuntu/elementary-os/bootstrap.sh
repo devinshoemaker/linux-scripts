@@ -2,6 +2,9 @@
 
 # Elementary OS - Bootstrap
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
 # Update Packages
 echo '==> Update packages? (Y/n)'
 read UPDATE_PACKAGES

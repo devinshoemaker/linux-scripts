@@ -2,6 +2,9 @@
 
 # Ubuntu 16.04 WSL - Bootstrap
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
 # Set directory environment variable
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -10,7 +13,7 @@ echo '==> Update packages? (Y/n)'
 read UPDATE_PACKAGES
 if [ "$UPDATE_PACKAGES" = 'y' ] || [ "$UPDATE_PACKAGES" = 'yes' ] || [ "$UPDATE_PACKAGES" = '' ]; then
     sudo apt update
-    sudo apt upgrade -y
+    sudo apt -y upgrade
 else
     echo '==> Skipping package updates.'
 fi
@@ -45,4 +48,4 @@ else
 fi
 
 # Remove packages no longer required
-sudo apt autoremove -y
+sudo apt -y autoremove

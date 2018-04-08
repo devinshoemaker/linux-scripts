@@ -2,12 +2,18 @@
 
 # Ubuntu 17.10 - Bootstrap
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+# Store a local variable of the scripts current directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Update Packages
 echo '==> Update packages? (Y/n)'
 read UPDATE_PACKAGES
 if [ "$UPDATE_PACKAGES" = 'y' ] || [ "$UPDATE_PACKAGES" = 'yes' ] || [ "$UPDATE_PACKAGES" = '' ]; then
     sudo apt update
-    sudo apt upgrade -y
+    sudo apt -y upgrade
 else
     echo '==> Skipping package updates.'
 fi
@@ -23,19 +29,19 @@ fi
 
 # Disable Universal Time Clock
 # fixes time difference in Windows
-echo '==> Disable Universal Time Clock? (fixes date & time issues with Windows) (Y/n)'
+echo '==> Disable Universal Time Clock? (fixes date & time issues with Windows) (y/N)'
 read DISABLE_UTC
-if [ "$DISABLE_UTC" = 'y' ] || [ "$DISABLE_UTC" = 'yes' ] || [ "$DISABLE_UTC" = '' ]; then
+if [ "$DISABLE_UTC" = 'y' ] || [ "$DISABLE_UTC" = 'yes' ]; then
     timedatectl set-local-rtc 1 --adjust-system-clock
 else
     echo '==> Skip disabling UTC.'
 fi
 
 # GNOME Shell Tweaks
-echo '==> Install GNOME tweaks, themes, and extensions? (Y/n)'
+echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read GNOME_TWEAKS
-if [ "$GNOME_TWEAKS" = 'y' ] || [ "$GNOME_TWEAKS" = 'yes' ] || [ "$GNOME_TWEAKS" = '' ]; then
-    ./gnome-tweaks.sh
+if [ "$GNOME_TWEAKS" = 'y' ] || [ "$GNOME_TWEAKS" = 'yes' ]; then
+    . $DIR/gnome-tweaks.sh
 else
     echo '==> Skipping GNOME tweaks.'
 fi
@@ -44,7 +50,7 @@ fi
 echo '==> Install ~/.bashrc modifications? (Y/n)'
 read BASHRC_TWEAKS
 if [ "$BASHRC_TWEAKS" = 'y' ] || [ "$BASHRC_TWEAKS" = 'yes' ] || [ "$BASHRC_TWEAKS" = '' ]; then
-    ./../common/bashrc-tweaks.sh
+    . $DIR/../common/bashrc-tweaks.sh
 else
     echo '==> Skipping ~/.bashrc tweaks.'
 fi
@@ -63,6 +69,9 @@ echo '==> Install basic packages? (Y/n)'
 read BASIC_PACKAGES
 if [ "$BASIC_PACKAGES" = 'y' ] || [ "$BASIC_PACKAGES" = 'yes' ] || [ "$BASIC_PACKAGES" = '' ]; then
     sudo apt install -y exfat-fuse gimp gnome-boxes gparted guake nemo transmission-gtk virtualbox xclip
+
+    # Autostart Applications
+    cp -r  $DIR/../../autostart/ ~/.config/
 else
     echo '==> Skipping basic packages.'
 fi
@@ -71,7 +80,7 @@ fi
 echo '==> Install user Snap packages? (Y/n)'
 read USER_SNAPS
 if [ "$USER_SNAPS" = 'y' ] || [ "$USER_SNAPS" = 'yes' ] || [ "$USER_SNAPS" = '' ]; then
-    ./../../common/user-snaps.sh
+    . $DIR/../../common/user-snaps.sh
 else
     echo '==> Skipping user Snap packages.'
 fi
@@ -80,7 +89,7 @@ fi
 echo '==> Install Google Chrome? (Y/n)'
 read GOOGLE_CHROME
 if [ "$GOOGLE_CHROME" = 'y' ] || [ "$GOOGLE_CHROME" = 'yes' ] || [ "$GOOGLE_CHROME" = '' ]; then
-    ./../common/google-chrome.sh
+    . $DIR/../common/google-chrome.sh
 else
     echo '==> Skipping Google Chrome.'
 fi
@@ -89,19 +98,16 @@ fi
 echo '==> Install Etcher? (Y/n)'
 read ETCHER
 if [ "$ETCHER" = 'y' ] || [ "$ETCHER" = 'yes' ] || [ "$ETCHER" = '' ]; then
-    ./../common/etcher.sh
+    . $DIR/../common/etcher.sh
 else
     echo '==> Skipping Etcher.'
 fi
-
-# Autostart Applications
-cp -r ../../autostart/ ~/.config/
 
 # Install Equalizer
 echo '==> Install PulseAudio Equalizer? (Y/n)'
 read PULSEAUDIO_EQUALIZER
 if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
-    ./../common/equalizer.sh
+    . $DIR/../common/equalizer.sh
 else
     echo '==> Skipping PulseAudio Equalizer.'
 fi
@@ -110,7 +116,7 @@ fi
 echo '==> Install development tools? (Y/n)'
 read DEVELOPMENT_TOOLS
 if [ "$DEVELOPMENT_TOOLS" = 'y' ] || [ "$DEVELOPMENT_TOOLS" = 'yes' ] || [ "$DEVELOPMENT_TOOLS" = '' ]; then
-    ./../common/development-tools.sh
+    . $DIR/../common/development-tools.sh
 else
     echo '==> Skipping development tools.'
 fi
@@ -119,10 +125,10 @@ fi
 echo '==> Install GRUB tweaks? (Y/n)'
 read GRUB_TWEAKS
 if [ "$GRUB_TWEAKS" = 'y' ] || [ "$GRUB_TWEAKS" = 'yes' ] || [ "$GRUB_TWEAKS" = '' ]; then
-    ./../common/grub-tweaks.sh
+    . $DIR/../common/grub-tweaks.sh
 else
     echo '==> Skipping GRUB tweaks.'
 fi
 
 # Remove Packages No Longer Required
-sudo apt autoremove -y
+sudo apt -y autoremove

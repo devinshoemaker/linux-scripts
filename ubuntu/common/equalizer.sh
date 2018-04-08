@@ -1,12 +1,15 @@
 #!/bin/bash
 
-# Ubuntu Install PulseAudio Equalizer
+# Ubuntu - Install PulseAudio Equalizer
+
+# Exit immediately if a command exits with a non-zero status
+set -e
 
 # Update Repositories
 sudo apt update
 
 # Install Package
-sudo apt install -y pulseaudio-equalizer
+sudo apt -y install pulseaudio-equalizer
 
 # Fix Equalizer
 su -c 'echo load-module module-equalizer-sink  >> /etc/pulse/default.pa

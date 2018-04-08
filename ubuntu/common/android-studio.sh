@@ -3,6 +3,9 @@
 # Ubuntu - Install Android Studio
 # Ubuntu Make Required
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
 # Install Android Studio from Ubuntu Make
 umake android $HOME/.local/share/umake/android/android-studio --accept-license
 
