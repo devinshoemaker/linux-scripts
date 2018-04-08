@@ -1,2 +1,2 @@
 # linux-post-install
-Post install scripts for several Linux distrobutions.
+Post install scripts for several Linux distributions.
