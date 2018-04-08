@@ -68,7 +68,7 @@ fi
 echo '==> Install basic packages? (Y/n)'
 read BASIC_PACKAGES
 if [ "$BASIC_PACKAGES" = 'y' ] || [ "$BASIC_PACKAGES" = 'yes' ] || [ "$BASIC_PACKAGES" = '' ]; then
-    sudo apt install -y exfat-fuse gimp gnome-boxes gparted guake nemo transmission-gtk virtualbox xclip
+    sudo apt -y install exfat-fuse gimp gnome-boxes gparted guake nemo transmission-gtk virtualbox xclip
 
     # Autostart Applications
     cp -r  ${DIR}/../../autostart/ ~/.config/
