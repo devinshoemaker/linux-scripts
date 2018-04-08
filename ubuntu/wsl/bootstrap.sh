@@ -42,7 +42,7 @@ fi
 echo '==> Install Node.js? (Y/n)'
 read NODEJS
 if [ "$NODEJS" = 'y' ] || [ "$NODEJS" = 'yes' ] || [ "$NODEJS" = '' ]; then
-    . $DIR/../../common/nodejs.sh
+    . ${DIR}/../../common/nodejs.sh
 else
     echo '==> Skipping Node.js.'
 fi

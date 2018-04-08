@@ -22,7 +22,7 @@ npm install -g npm-check-updates
 echo '==> Install Angular? (Y/n)'
 read ANGULAR
 if [ "$ANGULAR" = 'y' ] || [ "$ANGULAR" = 'yes' ] || [ "$ANGULAR" = '' ]; then
-    . $DIR/angular.sh
+    . ${DIR}/angular.sh
 else
     echo '==> Skipping Angular.'
 fi
@@ -31,7 +31,7 @@ fi
 echo '==> Install Ionic? (Y/n)'
 read IONIC
 if [ "$IONIC" = 'y' ] || [ "$IONIC" = 'yes' ] || [ "$IONIC" = '' ]; then
-    . $DIR/ionic.sh
+    . ${DIR}/ionic.sh
 else
     echo '==> Skipping Ionic.'
 fi
