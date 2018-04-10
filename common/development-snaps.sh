@@ -12,7 +12,7 @@ sudo snap install vscode --classic
 sudo snap install atom --classic
 
 # GitKraken
-sudo snap install gitkraken
+sudo snap install --classic gitkraken
 
 # CouchDB
 sudo snap install couchdb
