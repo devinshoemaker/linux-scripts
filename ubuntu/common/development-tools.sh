@@ -17,15 +17,6 @@ else
     echo '==> Skipping development Snap packages.'
 fi
 
-# Install GitKraken
-echo '==> Install GitKraken? (Y/n)'
-read GITKRAKEN
-if [ "$GITKRAKEN" = 'y' ] || [ "$GITKRAKEN" = 'yes' ] || [ "$GITKRAKEN" = '' ]; then
-    . ${DIR}/../common/gitkraken.sh
-else
-    echo '==> Skipping GitKraken.'
-fi
-
 # Install Docker
 echo '==> Install Docker? (Y/n)'
 read DOCKER
