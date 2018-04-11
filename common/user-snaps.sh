@@ -12,4 +12,4 @@ sudo snap install spotify
 sudo snap install discord
 
 # Slack
-sudo snap install slack --classic
+sudo snap install --classic slack
