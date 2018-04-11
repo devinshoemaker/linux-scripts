@@ -27,6 +27,15 @@ else
     echo '==> Skipping root password.'
 fi
 
+# GRUB Tweaks
+echo '==> Install GRUB tweaks? (Y/n)'
+read GRUB_TWEAKS
+if [ "$GRUB_TWEAKS" = 'y' ] || [ "$GRUB_TWEAKS" = 'yes' ] || [ "$GRUB_TWEAKS" = '' ]; then
+    . ${BOOTSTRAP_DIR}/../common/grub-tweaks.sh
+else
+    echo '==> Skipping GRUB tweaks.'
+fi
+
 # Disable Universal Time Clock
 # fixes time difference in Windows
 echo '==> Disable Universal Time Clock? (fixes date & time issues with Windows) (y/N)'
@@ -119,15 +128,6 @@ if [ "$DEVELOPMENT_TOOLS" = 'y' ] || [ "$DEVELOPMENT_TOOLS" = 'yes' ] || [ "$DEV
     . ${BOOTSTRAP_DIR}/../common/development-tools.sh
 else
     echo '==> Skipping development tools.'
-fi
-
-# GRUB Tweaks
-echo '==> Install GRUB tweaks? (Y/n)'
-read GRUB_TWEAKS
-if [ "$GRUB_TWEAKS" = 'y' ] || [ "$GRUB_TWEAKS" = 'yes' ] || [ "$GRUB_TWEAKS" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/grub-tweaks.sh
-else
-    echo '==> Skipping GRUB tweaks.'
 fi
 
 # Remove Packages No Longer Required

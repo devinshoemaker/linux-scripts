@@ -27,6 +27,15 @@ else
     echo '==> Skipping root password.'
 fi
 
+# GRUB tweaks
+echo '==> Install GRUB tweaks? (Y/n)'
+read GRUB_TWEAKS
+if [ "$GRUB_TWEAKS" = 'y' ] || [ "$GRUB_TWEAKS" = 'yes' ] || [ "$GRUB_TWEAKS" = '' ]; then
+    . ${BOOTSTRAP_DIR}/../common/grub-tweaks.sh
+else
+    echo '==> Skipping GRUB tweaks.'
+fi
+
 # GNOME Shell tweaks
 echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read GNOME_TWEAKS
@@ -109,15 +118,6 @@ if [ "$DEVELOPMENT_TOOLS" = 'y' ] || [ "$DEVELOPMENT_TOOLS" = 'yes' ] || [ "$DEV
     . ${BOOTSTRAP_DIR}/../common/development-tools.sh
 else
     echo '==> Skipping development tools.'
-fi
-
-# GRUB tweaks
-echo '==> Install GRUB tweaks? (Y/n)'
-read GRUB_TWEAKS
-if [ "$GRUB_TWEAKS" = 'y' ] || [ "$GRUB_TWEAKS" = 'yes' ] || [ "$GRUB_TWEAKS" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/grub-tweaks.sh
-else
-    echo '==> Skipping GRUB tweaks.'
 fi
 
 # Remove Packages No Longer Required
