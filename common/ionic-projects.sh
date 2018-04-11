@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# Clone Source Code
-# Required - Node.js CouchDB
-
-# Add CORS to CouchDB
-npm install -g add-cors-to-couchdb
-add-cors-to-couchdb
+# Clone Ionic Source Code
 
 # Create Source Code Directory
 mkdir -p ~/code/ionic
