@@ -46,6 +46,15 @@ else
     echo '==> Skip disabling UTC.'
 fi
 
+# Install PulseAudio Equalizer
+echo '==> Install PulseAudio Equalizer? (Y/n)'
+read PULSEAUDIO_EQUALIZER
+if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
+    . ${BOOTSTRAP_DIR}/../common/equalizer.sh
+else
+    echo '==> Skipping PulseAudio Equalizer.'
+fi
+
 # GNOME Shell Tweaks
 echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read GNOME_TWEAKS
@@ -110,15 +119,6 @@ if [ "$ETCHER" = 'y' ] || [ "$ETCHER" = 'yes' ] || [ "$ETCHER" = '' ]; then
     . ${BOOTSTRAP_DIR}/../common/etcher.sh
 else
     echo '==> Skipping Etcher.'
-fi
-
-# Install Equalizer
-echo '==> Install PulseAudio Equalizer? (Y/n)'
-read PULSEAUDIO_EQUALIZER
-if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/equalizer.sh
-else
-    echo '==> Skipping PulseAudio Equalizer.'
 fi
 
 # Install Development Tools

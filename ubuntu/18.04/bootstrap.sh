@@ -36,6 +36,15 @@ else
     echo '==> Skipping GRUB tweaks.'
 fi
 
+# Install PulseAudio Equalizer
+echo '==> Install PulseAudio Equalizer? (Y/n)'
+read PULSEAUDIO_EQUALIZER
+if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
+    . ${BOOTSTRAP_DIR}/../common/equalizer.sh
+else
+    echo '==> Skipping PulseAudio Equalizer.'
+fi
+
 # GNOME Shell tweaks
 echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read GNOME_TWEAKS
@@ -100,15 +109,6 @@ if [ "$ETCHER" = 'y' ] || [ "$ETCHER" = 'yes' ] || [ "$ETCHER" = '' ]; then
     . ${BOOTSTRAP_DIR}/../common/etcher.sh
 else
     echo '==> Skipping Etcher.'
-fi
-
-# Install PulseAudio-Equalizer
-echo '==> Install PulseAudio Equalizer? (Y/n)'
-read PULSEAUDIO_EQUALIZER
-if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/equalizer.sh
-else
-    echo '==> Skipping PulseAudio Equalizer.'
 fi
 
 # Install development tools
