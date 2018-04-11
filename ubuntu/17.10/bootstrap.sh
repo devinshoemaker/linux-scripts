@@ -6,7 +6,7 @@
 set -e
 
 # Store a local variable of the scripts current directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BOOTSTRAP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Update Packages
 echo '==> Update packages? (Y/n)'
@@ -41,7 +41,7 @@ fi
 echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read GNOME_TWEAKS
 if [ "$GNOME_TWEAKS" = 'y' ] || [ "$GNOME_TWEAKS" = 'yes' ]; then
-    . ${DIR}/gnome-tweaks.sh
+    . ${BOOTSTRAP_DIR}/gnome-tweaks.sh
 else
     echo '==> Skipping GNOME tweaks.'
 fi
@@ -50,7 +50,7 @@ fi
 echo '==> Install ~/.bashrc modifications? (Y/n)'
 read BASHRC_TWEAKS
 if [ "$BASHRC_TWEAKS" = 'y' ] || [ "$BASHRC_TWEAKS" = 'yes' ] || [ "$BASHRC_TWEAKS" = '' ]; then
-    . ${DIR}/../common/bashrc-tweaks.sh
+    . ${BOOTSTRAP_DIR}/../common/bashrc-tweaks.sh
 else
     echo '==> Skipping ~/.bashrc tweaks.'
 fi
@@ -71,7 +71,7 @@ if [ "$BASIC_PACKAGES" = 'y' ] || [ "$BASIC_PACKAGES" = 'yes' ] || [ "$BASIC_PAC
     sudo apt -y install exfat-fuse gimp gnome-boxes gparted guake nemo transmission-gtk virtualbox xclip
 
     # Autostart Applications
-    cp -r  ${DIR}/../../autostart/ ~/.config/
+    cp -r  ${BOOTSTRAP_DIR}/../../autostart/ ~/.config/
 else
     echo '==> Skipping basic packages.'
 fi
@@ -80,7 +80,7 @@ fi
 echo '==> Install user Snap packages? (Y/n)'
 read USER_SNAPS
 if [ "$USER_SNAPS" = 'y' ] || [ "$USER_SNAPS" = 'yes' ] || [ "$USER_SNAPS" = '' ]; then
-    . ${DIR}/../../common/user-snaps.sh
+    . ${BOOTSTRAP_DIR}/../../common/user-snaps.sh
 else
     echo '==> Skipping user Snap packages.'
 fi
@@ -89,7 +89,7 @@ fi
 echo '==> Install Google Chrome? (Y/n)'
 read GOOGLE_CHROME
 if [ "$GOOGLE_CHROME" = 'y' ] || [ "$GOOGLE_CHROME" = 'yes' ] || [ "$GOOGLE_CHROME" = '' ]; then
-    . ${DIR}/../common/google-chrome.sh
+    . ${BOOTSTRAP_DIR}/../common/google-chrome.sh
 else
     echo '==> Skipping Google Chrome.'
 fi
@@ -98,7 +98,7 @@ fi
 echo '==> Install Etcher? (Y/n)'
 read ETCHER
 if [ "$ETCHER" = 'y' ] || [ "$ETCHER" = 'yes' ] || [ "$ETCHER" = '' ]; then
-    . ${DIR}/../common/etcher.sh
+    . ${BOOTSTRAP_DIR}/../common/etcher.sh
 else
     echo '==> Skipping Etcher.'
 fi
@@ -107,7 +107,7 @@ fi
 echo '==> Install PulseAudio Equalizer? (Y/n)'
 read PULSEAUDIO_EQUALIZER
 if [ "$PULSEAUDIO_EQUALIZER" = 'y' ] || [ "$PULSEAUDIO_EQUALIZER" = 'yes' ] || [ "$PULSEAUDIO_EQUALIZER" = '' ]; then
-    . ${DIR}/../common/equalizer.sh
+    . ${BOOTSTRAP_DIR}/../common/equalizer.sh
 else
     echo '==> Skipping PulseAudio Equalizer.'
 fi
@@ -116,7 +116,7 @@ fi
 echo '==> Install development tools? (Y/n)'
 read DEVELOPMENT_TOOLS
 if [ "$DEVELOPMENT_TOOLS" = 'y' ] || [ "$DEVELOPMENT_TOOLS" = 'yes' ] || [ "$DEVELOPMENT_TOOLS" = '' ]; then
-    . ${DIR}/../common/development-tools.sh
+    . ${BOOTSTRAP_DIR}/../common/development-tools.sh
 else
     echo '==> Skipping development tools.'
 fi
@@ -125,7 +125,7 @@ fi
 echo '==> Install GRUB tweaks? (Y/n)'
 read GRUB_TWEAKS
 if [ "$GRUB_TWEAKS" = 'y' ] || [ "$GRUB_TWEAKS" = 'yes' ] || [ "$GRUB_TWEAKS" = '' ]; then
-    . ${DIR}/../common/grub-tweaks.sh
+    . ${BOOTSTRAP_DIR}/../common/grub-tweaks.sh
 else
     echo '==> Skipping GRUB tweaks.'
 fi

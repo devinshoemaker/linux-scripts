@@ -6,7 +6,7 @@
 set -e
 
 # Set directory environment variable
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BOOTSTRAP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Update packages
 echo '==> Update packages? (Y/n)'
@@ -42,7 +42,7 @@ fi
 echo '==> Install Node.js? (Y/n)'
 read NODEJS
 if [ "$NODEJS" = 'y' ] || [ "$NODEJS" = 'yes' ] || [ "$NODEJS" = '' ]; then
-    . ${DIR}/../../common/nodejs.sh
+    . ${BOOTSTRAP_DIR}/../../common/nodejs.sh
 else
     echo '==> Skipping Node.js.'
 fi

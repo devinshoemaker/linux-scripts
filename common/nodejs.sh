@@ -2,7 +2,7 @@
 
 # Install Node.js
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+NODEJS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Node.js Version Manager
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -22,7 +22,7 @@ npm install -g npm-check-updates
 echo '==> Install Angular? (Y/n)'
 read ANGULAR
 if [ "$ANGULAR" = 'y' ] || [ "$ANGULAR" = 'yes' ] || [ "$ANGULAR" = '' ]; then
-    . ${DIR}/angular.sh
+    . ${NODEJS_DIR}/angular.sh
 else
     echo '==> Skipping Angular.'
 fi
@@ -31,7 +31,7 @@ fi
 echo '==> Install Ionic? (Y/n)'
 read IONIC
 if [ "$IONIC" = 'y' ] || [ "$IONIC" = 'yes' ] || [ "$IONIC" = '' ]; then
-    . ${DIR}/ionic.sh
+    . ${NODEJS_DIR}/ionic.sh
 else
     echo '==> Skipping Ionic.'
 fi
