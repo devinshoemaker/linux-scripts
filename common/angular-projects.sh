@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Clone Angular Projects
-# Required - Angular
 
 # Create Source Code Directory
 mkdir -p ~/code/angular
