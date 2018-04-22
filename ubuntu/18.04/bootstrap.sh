@@ -120,5 +120,5 @@ else
     echo '==> Skipping development tools.'
 fi
 
-# Remove Packages No Longer Required
+# Remove packages no longer required
 sudo apt -y autoremove
