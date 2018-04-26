@@ -13,7 +13,7 @@ echo '==> Update packages? (Y/n)'
 read UPDATE_PACKAGES
 if [ "$UPDATE_PACKAGES" = 'y' ] || [ "$UPDATE_PACKAGES" = 'Y' ] || [ "$UPDATE_PACKAGES" = '' ]; then
     sudo apt update
-    sudo apt -y upgrade
+    sudo apt -y full-upgrade
 else
     echo '==> Skipping package updates.'
 fi

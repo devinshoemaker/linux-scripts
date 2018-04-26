@@ -4,7 +4,7 @@
 
 # Update Packages
 sudo apt update
-sudo apt upgrade -y
+sudo apt -y full-upgrade
 
 # Set root password
 sudo passwd root

@@ -7,4 +7,4 @@ set -e
 
 echo '' >> ~/.bashrc
 echo 'alias update="sudo apt update && apt list --upgradable"' >> ~/.bashrc
-echo 'alias upgrade="sudo apt -y upgrade"' >> ~/.bashrc
+echo 'alias upgrade="sudo apt -y full-upgrade"' >> ~/.bashrc
