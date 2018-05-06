@@ -17,6 +17,9 @@ gsettings set org.gnome.desktop.interface clock-format 12h
 # Disable Desktop Sound Effects
 gsettings set org.gnome.desktop.sound event-sounds false
 
+# Set Screen Timeout to 15 Minutes
+gsettings set org.gnome.desktop.session idle-delay 900
+
 # Fix VPN
 sudo apt -y install network-manager-openvpn-gnome
 
