@@ -2,6 +2,9 @@
 
 # Development Oriented Snap Applications
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
 # IntelliJ IDEA Ultimate
 sudo snap install --classic intellij-idea-ultimate
 
