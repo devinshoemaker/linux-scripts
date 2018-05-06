@@ -20,6 +20,12 @@ gsettings set org.gnome.desktop.sound event-sounds false
 # Set Screen Timeout to 15 Minutes
 gsettings set org.gnome.desktop.session idle-delay 900
 
+# Automatic Suspend
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'suspend'
+
+# Set Automatic Suspend Timeout to 2 Hours
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 7200
+
 # Fix VPN
 sudo apt -y install network-manager-openvpn-gnome
 
