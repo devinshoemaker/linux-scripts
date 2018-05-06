@@ -11,6 +11,9 @@ sudo apt update
 # Install Stock GNOME Shell
 sudo apt -y install gnome-session
 
+# Set 24 Hour Clock
+gsettings set org.gnome.desktop.interface clock-format 12h
+
 # Fix VPN
 sudo apt -y install network-manager-openvpn-gnome
 
