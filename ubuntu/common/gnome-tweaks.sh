@@ -14,6 +14,9 @@ sudo apt -y install gnome-session
 # Set 24 Hour Clock
 gsettings set org.gnome.desktop.interface clock-format 12h
 
+# Disable Desktop Sound Effects
+gsettings set org.gnome.desktop.sound event-sounds false
+
 # Fix VPN
 sudo apt -y install network-manager-openvpn-gnome
 
