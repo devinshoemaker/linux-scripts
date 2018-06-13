@@ -18,6 +18,15 @@ else
     echo '==> Skipping package updates.'
 fi
 
+# Install development packages
+echo '==> Install development packages? GCC, Python, etc. (Y/n)'
+read DEVELOPMENT_PACKAGES
+if [ "$DEVELOPMENT_PACKAGES" = 'y' ] || [ "$DEVELOPMENT_PACKAGES" = 'Y' ] || [ "$DEVELOPMENT_PACKAGES" = '' ]; then
+    sudo apt -y install build-essential python
+else
+    echo '==> Skipping development packages.'
+fi
+
 # .bashrc modifications
 echo '==> Install ~/.bashrc modifications? (Y/n)'
 read BASHRC_TWEAKS
