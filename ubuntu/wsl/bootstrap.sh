@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ubuntu 16.04 WSL - Bootstrap
+# Ubuntu 18.04 WSL - Bootstrap
 
 # Exit immediately if a command exits with a non-zero status
 set -e
