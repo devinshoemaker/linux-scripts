@@ -22,7 +22,7 @@ fi
 echo '==> Install ~/.bashrc modifications? (Y/n)'
 read BASHRC_TWEAKS
 if [ "$BASHRC_TWEAKS" = 'y' ] || [ "$BASHRC_TWEAKS" = 'Y' ] || [ "$BASHRC_TWEAKS" = '' ]; then
-    echo 'cd alias code="/mnt/c/code"' >> ~/.bashrc
+    echo 'alias code="cd /mnt/c/code"' >> ~/.bashrc
 else
     echo '==> Skipping ~/.bashrc tweaks.'
 fi
