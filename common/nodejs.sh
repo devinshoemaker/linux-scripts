@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Install Latest Node.js
-nvm install node
+nvm install --lts
 
 # Instal NPM Check Updates
 npm install -g npm-check-updates
