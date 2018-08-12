@@ -35,7 +35,7 @@ fi
 echo "==> Install GRUB tweaks? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${UBUNTU_1804_DIR}/../common/grub-tweaks.sh
+    . ${UBUNTU_1804_DIR}/grub-tweaks.sh
 else
     echo "==> Skipping GRUB tweaks."
 fi
@@ -44,7 +44,7 @@ fi
 echo "==> Install PulseAudio Equalizer? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${UBUNTU_1804_DIR}/../common/equalizer.sh
+    . ${UBUNTU_1804_DIR}/equalizer.sh
 else
     echo "==> Skipping PulseAudio Equalizer."
 fi
@@ -53,7 +53,7 @@ fi
 echo "==> Install GNOME tweaks, themes, and extensions? (y/N)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ]; then
-    . ${UBUNTU_1804_DIR}/../common/gnome-tweaks.sh
+    . ${UBUNTU_1804_DIR}/gnome-tweaks.sh
 else
     echo "==> Skipping GNOME tweaks."
 fi
@@ -62,7 +62,7 @@ fi
 echo "==> Install ~/.bashrc modifications? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${UBUNTU_1804_DIR}/../common/bashrc-tweaks.sh
+    . ${UBUNTU_1804_DIR}/bashrc-tweaks.sh
 else
     echo "==> Skipping ~/.bashrc tweaks."
 fi
@@ -98,7 +98,7 @@ fi
 echo "==> Install Google Chrome? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${UBUNTU_1804_DIR}/../common/google-chrome.sh
+    . ${UBUNTU_1804_DIR}/google-chrome.sh
 else
     echo "==> Skipping Google Chrome."
 fi
@@ -107,7 +107,7 @@ fi
 echo "==> Install Etcher? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${UBUNTU_1804_DIR}/../common/etcher.sh
+    . ${UBUNTU_1804_DIR}/etcher.sh
 else
     echo "==> Skipping Etcher."
 fi
@@ -116,7 +116,7 @@ fi
 echo "==> Install development tools? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${UBUNTU_1804_DIR}/../common/development-tools.sh
+    . ${UBUNTU_1804_DIR}/development-tools.sh
 else
     echo "==> Skipping development tools."
 fi
