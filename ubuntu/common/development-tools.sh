@@ -9,13 +9,13 @@ set -e
 sudo -v
 
 # Store a local variable of the scripts current directory
-DEVELOPMENT_TOOLS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+UBUNTU_COMMON_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Snap Packages
 echo '==> Install development Snap packages? (Y/n)'
 read SNAP_PACKAGES
 if [ "$SNAP_PACKAGES" = 'y' ] || [ "$SNAP_PACKAGES" = 'Y' ] || [ "$SNAP_PACKAGES" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../../common/development-snaps.sh
+    . ${UBUNTU_COMMON_DIR}/../../common/development-snaps.sh
 else
     echo '==> Skipping development Snap packages.'
 fi
@@ -24,7 +24,7 @@ fi
 echo '==> Install Docker? (Y/n)'
 read DOCKER
 if [ "$DOCKER" = 'y' ] || [ "$DOCKER" = 'Y' ] || [ "$DOCKER" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../common/docker.sh
+    . ${UBUNTU_COMMON_DIR}/../common/docker.sh
 else
     echo '==> Skipping Docker.'
 fi
@@ -33,7 +33,7 @@ fi
 echo '==> Install Node.js? (Y/n)'
 read NODEJS
 if [ "$NODEJS" = 'y' ] || [ "$NODEJS" = 'Y' ] || [ "$NODEJS" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../../common/nodejs.sh
+    . ${UBUNTU_COMMON_DIR}/../../common/nodejs.sh
 else
     echo '==> Skipping Node.js.'
 fi
@@ -42,7 +42,7 @@ fi
 echo '==> Install CouchDB? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../18.04/couchdb.sh
+    . ${UBUNTU_COMMON_DIR}/../18.04/couchdb.sh
 else
     echo '==> Skipping CouchDB.'
 fi
@@ -51,7 +51,7 @@ fi
 echo '==> Clone Angular projects? (Y/n)'
 read ANGULAR_PROJECTS
 if [ "$ANGULAR_PROJECTS" = 'y' ] || [ "$ANGULAR_PROJECTS" = 'Y' ] || [ "$ANGULAR_PROJECTS" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../../common/angular-projects.sh
+    . ${UBUNTU_COMMON_DIR}/../../common/angular-projects.sh
 else
     echo '==> Skipping Angular projects.'
 fi
@@ -60,7 +60,7 @@ fi
 echo '==> Clone Ionic projects? (Y/n)'
 read IONIC_PROJECTS
 if [ "$IONIC_PROJECTS" = 'y' ] || [ "$IONIC_PROJECTS" = 'Y' ] || [ "$IONIC_PROJECTS" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../../common/ionic-projects.sh
+    . ${UBUNTU_COMMON_DIR}/../../common/ionic-projects.sh
 else
     echo '==> Skipping Ionic projects.'
 fi
@@ -69,7 +69,7 @@ fi
 echo '==> Install Ubuntu Make? (Y/n)'
 read UBUNTU_MAKE
 if [ "$UBUNTU_MAKE" = 'y' ] || [ "$UBUNTU_MAKE" = 'Y' ] || [ "$UBUNTU_MAKE" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../common/ubuntu-make.sh
+    . ${UBUNTU_COMMON_DIR}/../common/ubuntu-make.sh
 else
     echo '==> Skipping Ubuntu Make.'
 fi
@@ -78,7 +78,7 @@ fi
 echo '==> Install Android Studio? (Y/n)'
 read ANDROID_STUDIO
 if [ "$ANDROID_STUDIO" = 'y' ] || [ "$ANDROID_STUDIO" = 'Y' ] || [ "$ANDROID_STUDIO" = '' ]; then
-    . ${DEVELOPMENT_TOOLS_DIR}/../common/android-studio.sh
+    . ${UBUNTU_COMMON_DIR}/../common/android-studio.sh
 else
     echo '==> Skipping Android Studio.'
 fi

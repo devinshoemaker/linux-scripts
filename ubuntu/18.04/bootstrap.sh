@@ -9,7 +9,7 @@ set -e
 sudo -v
 
 # Store a local variable of the scripts current directory
-BOOTSTRAP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+UBUNTU_1804_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Update packages
 echo '==> Update packages? (Y/n)'
@@ -34,7 +34,7 @@ fi
 echo '==> Install GRUB tweaks? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/grub-tweaks.sh
+    . ${UBUNTU_1804_DIR}/../common/grub-tweaks.sh
 else
     echo '==> Skipping GRUB tweaks.'
 fi
@@ -43,7 +43,7 @@ fi
 echo '==> Install PulseAudio Equalizer? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/equalizer.sh
+    . ${UBUNTU_1804_DIR}/../common/equalizer.sh
 else
     echo '==> Skipping PulseAudio Equalizer.'
 fi
@@ -52,7 +52,7 @@ fi
 echo '==> Install GNOME tweaks, themes, and extensions? (y/N)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ]; then
-    . ${BOOTSTRAP_DIR}/../common/gnome-tweaks.sh
+    . ${UBUNTU_1804_DIR}/../common/gnome-tweaks.sh
 else
     echo '==> Skipping GNOME tweaks.'
 fi
@@ -61,7 +61,7 @@ fi
 echo '==> Install ~/.bashrc modifications? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/bashrc-tweaks.sh
+    . ${UBUNTU_1804_DIR}/../common/bashrc-tweaks.sh
 else
     echo '==> Skipping ~/.bashrc tweaks.'
 fi
@@ -82,7 +82,7 @@ if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = ''
     sudo apt -y install exfat-fuse gimp gparted guake transmission-gtk virtualbox xclip
 
     # Autostart applications
-    cp -r ${BOOTSTRAP_DIR}/../../autostart/ ~/.config/
+    cp -r ${UBUNTU_1804_DIR}/../../autostart/ ~/.config/
 else
     echo '==> Skipping basic packages.'
 fi
@@ -91,7 +91,7 @@ fi
 echo '==> Install user Snap packages? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../../common/user-snaps.sh
+    . ${UBUNTU_1804_DIR}/../../common/user-snaps.sh
 else
     echo '==> Skipping user Snap packages.'
 fi
@@ -100,7 +100,7 @@ fi
 echo '==> Install Google Chrome? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/google-chrome.sh
+    . ${UBUNTU_1804_DIR}/../common/google-chrome.sh
 else
     echo '==> Skipping Google Chrome.'
 fi
@@ -109,7 +109,7 @@ fi
 echo '==> Install Etcher? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/etcher.sh
+    . ${UBUNTU_1804_DIR}/../common/etcher.sh
 else
     echo '==> Skipping Etcher.'
 fi
@@ -118,7 +118,7 @@ fi
 echo '==> Install development tools? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../common/development-tools.sh
+    . ${UBUNTU_1804_DIR}/../common/development-tools.sh
 else
     echo '==> Skipping development tools.'
 fi
