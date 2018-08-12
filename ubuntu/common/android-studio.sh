@@ -11,6 +11,8 @@ sudo -v
 # Store a local variable of the scripts current directory
 UBUNTU_COMMON_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+echo "==> Installing Android Studio..."
+
 # Check if Ubuntu Make is installed
 if ! command -v umake >/dev/null 2>&1 ; then
     echo "==> Ubuntu Make not found. Installing now..."
