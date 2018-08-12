@@ -5,6 +5,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+# Update the user's cached credentials, authenticating the user if necessary
+sudo -v
+
 # Store a local variable of the scripts current directory
 DEVELOPMENT_TOOLS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
