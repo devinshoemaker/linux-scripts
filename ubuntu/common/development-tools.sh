@@ -35,6 +35,15 @@ else
     echo '==> Skipping Node.js.'
 fi
 
+# Install CouchDB
+echo '==> Install CouchDB? (Y/n)'
+read USER_PROMPT
+if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
+    . ${DEVELOPMENT_TOOLS_DIR}/../18.04/couchdb.sh
+else
+    echo '==> Skipping CouchDB.'
+fi
+
 # Clone Angular Projects
 echo '==> Clone Angular projects? (Y/n)'
 read ANGULAR_PROJECTS
