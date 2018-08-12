@@ -68,9 +68,9 @@ else
 fi
 
 # Install NVIDIA driver
-echo "==> Install NVIDIA graphics driver? (y/N)"
+echo "==> Install NVIDIA graphics driver? (Y/n)"
 read USER_PROMPT
-if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ]; then
+if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
     sudo ubuntu-drivers autoinstall
 else
     echo "==> Skipping NVIDIA driver."
