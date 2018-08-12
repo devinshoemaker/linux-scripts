@@ -1,10 +1,23 @@
 #!/bin/bash
 
 # Ubuntu - Install Android Studio
-# Ubuntu Make Required
 
 # Exit immediately if a command exits with a non-zero status
 set -e
+
+# Update the user's cached credentials, authenticating the user if necessary
+sudo -v
+
+# Store a local variable of the scripts current directory
+UBUNTU_COMMON_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "==> Installing Android Studio..."
+
+# Check if Ubuntu Make is installed
+if ! command -v umake >/dev/null 2>&1 ; then
+    echo "==> Ubuntu Make not found. Installing now..."
+    . ${UBUNTU_COMMON_DIR}/ubuntu-make.sh
+fi
 
 # Install Android Studio from Ubuntu Make
 umake android $HOME/.local/share/umake/android/android-studio --accept-license

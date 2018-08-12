@@ -5,8 +5,11 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+# Update the user's cached credentials, authenticating the user if necessary
+sudo -v
+
 # Set directory environment variable
-BOOTSTRAP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+UBUNTU_WSL_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Update packages
 echo '==> Update packages? (Y/n)'
@@ -51,7 +54,7 @@ fi
 echo '==> Install Node.js? (Y/n)'
 read NODEJS
 if [ "$NODEJS" = 'y' ] || [ "$NODEJS" = 'Y' ] || [ "$NODEJS" = '' ]; then
-    . ${BOOTSTRAP_DIR}/../../common/nodejs.sh
+    . ${UBUNTU_WSL_DIR}/../../common/nodejs.sh
 else
     echo '==> Skipping Node.js.'
 fi

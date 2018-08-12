@@ -16,6 +16,3 @@ sudo snap install --classic atom
 
 # GitKraken
 sudo snap install --classic gitkraken
-
-# CouchDB
-sudo snap install couchdb
