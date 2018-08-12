@@ -17,6 +17,7 @@ read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
     sudo apt update
     sudo apt -y full-upgrade
+    sudo apt -y autoremove
 else
     echo "==> Skipping package updates."
 fi
@@ -119,6 +120,3 @@ if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = ''
 else
     echo "==> Skipping development tools."
 fi
-
-# Remove packages no longer required
-sudo apt -y autoremove
