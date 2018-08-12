@@ -80,9 +80,6 @@ echo '==> Install basic packages? (Y/n)'
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
     sudo apt -y install exfat-fuse gimp gparted guake transmission-gtk virtualbox xclip
-
-    # Autostart applications
-    cp -r ${UBUNTU_1804_DIR}/../../autostart/ ~/.config/
 else
     echo '==> Skipping basic packages.'
 fi
