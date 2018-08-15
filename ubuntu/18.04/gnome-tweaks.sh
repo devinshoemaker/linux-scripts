@@ -11,9 +11,6 @@ sudo -v
 # Store a local variable of the scripts current directory
 UBUNTU_COMMON_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Update Repositories
-sudo apt update
-
 echo "==> Install vanilla GNOME Shell session? (Y/n)"
 read USER_PROMPT
 if [ "$USER_PROMPT" = 'y' ] || [ "$USER_PROMPT" = 'Y' ] || [ "$USER_PROMPT" = '' ]; then
