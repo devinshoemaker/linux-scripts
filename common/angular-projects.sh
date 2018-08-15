@@ -7,4 +7,4 @@ mkdir -p ~/code/angular
 cd ~/code/angular
 
 # Clone Angular Projects
-git clone https://github.com/Dshoe/angular-tour-of-heroes
+git clone git@github.com:Dshoe/angular-tour-of-heroes
