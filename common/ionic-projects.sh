@@ -3,8 +3,8 @@
 # Clone Ionic Source Code
 
 # Create Source Code Directory
-mkdir -p ~/code/ionic
-cd ~/code/ionic
+mkdir -p ~/Projects/ionic
+cd ~/Projects/ionic
 
 # Clone Ionic Projects
 git clone https://github.com/dshoe/crypto-profit-log.git
