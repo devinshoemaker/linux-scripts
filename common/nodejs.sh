@@ -5,7 +5,7 @@
 NODEJS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Node.js Version Manager
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Allow NVM to be Used Without Restarting Bash
 export NVM_DIR="$HOME/.nvm"
