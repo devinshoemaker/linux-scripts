@@ -12,4 +12,4 @@ sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic vscode
 
 # GitKraken
-sudo snap install --classic gitkraken
+sudo snap install gitkraken
